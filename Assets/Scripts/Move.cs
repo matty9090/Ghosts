@@ -9,7 +9,7 @@ public class Move : MonoBehaviour {
 
     private void Update() {
         Vector3 vel = GetComponent<Rigidbody>().velocity;
-        transform.rotation = Quaternion.LookRotation(vel);
-        transform.Rotate(new Vector3(-90, 0, 0));
+        transform.rotation = Quaternion.LookRotation(-vel);
+        transform.Rotate(new Vector3(0, 90, 0));
     }
 }
