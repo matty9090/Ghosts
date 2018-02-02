@@ -359,26 +359,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 198833495271322926, guid: 9c167a537d59aca458991984cb3df775,
-        type: 2}
-      propertyPath: ShapeModule.m_Position.x
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198833495271322926, guid: 9c167a537d59aca458991984cb3df775,
-        type: 2}
-      propertyPath: randomSeed
-      value: 1497564676
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990286586429462, guid: 9c167a537d59aca458991984cb3df775, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 212745595247182450, guid: 9c167a537d59aca458991984cb3df775,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300028, guid: e2572b29337db9e46b54154ce3eafaf0,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c167a537d59aca458991984cb3df775, type: 2}
   m_IsPrefabParent: 0
