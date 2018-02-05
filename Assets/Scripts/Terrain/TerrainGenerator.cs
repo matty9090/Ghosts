@@ -4,7 +4,13 @@ using UnityEngine;
 
 public abstract class TerrainGenerator {
     protected int width;
+    protected Vector3[] terrainCoords;
 
-    public TerrainGenerator(int w) { width = w;}
+    public TerrainGenerator(int w) {
+        width = w;
+        terrainCoords = new Vector3[width];
+    }
+
     public virtual void generate() {}
+    public virtual Vector3[] terrainData { get { return terrainCoords; } }
 }
