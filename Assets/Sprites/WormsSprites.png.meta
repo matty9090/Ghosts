@@ -1,0 +1,3622 @@
+fileFormatVersion: 2
+guid: 10dcf4798525cbe4fad805ce70ed9552
+timeCreated: 1517785522
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WormsSprites_0
+    21300002: WormsSprites_1
+    21300004: WormsSprites_2
+    21300006: WormsSprites_3
+    21300008: WormsSprites_4
+    21300010: WormsSprites_5
+    21300012: WormsSprites_6
+    21300014: WormsSprites_7
+    21300016: WormsSprites_8
+    21300018: WormsSprites_9
+    21300020: WormsSprites_10
+    21300022: WormsSprites_11
+    21300024: WormsSprites_12
+    21300026: WormsSprites_13
+    21300028: WormsSprites_14
+    21300030: WormsSprites_15
+    21300032: WormsSprites_16
+    21300034: WormsSprites_17
+    21300036: WormsSprites_18
+    21300038: WormsSprites_19
+    21300040: WormsSprites_20
+    21300042: WormsSprites_21
+    21300044: WormsSprites_22
+    21300046: WormsSprites_23
+    21300048: WormsSprites_24
+    21300050: WormsSprites_25
+    21300052: WormsSprites_26
+    21300054: WormsSprites_27
+    21300056: WormsSprites_28
+    21300058: WormsSprites_29
+    21300060: WormsSprites_30
+    21300062: WormsSprites_31
+    21300064: WormsSprites_32
+    21300066: WormsSprites_33
+    21300068: WormsSprites_34
+    21300070: WormsSprites_35
+    21300072: WormsSprites_36
+    21300074: WormsSprites_37
+    21300076: WormsSprites_38
+    21300078: WormsSprites_39
+    21300080: WormsSprites_40
+    21300082: WormsSprites_41
+    21300084: WormsSprites_42
+    21300086: WormsSprites_43
+    21300088: WormsSprites_44
+    21300090: WormsSprites_45
+    21300092: WormsSprites_46
+    21300094: WormsSprites_47
+    21300096: WormsSprites_48
+    21300098: WormsSprites_49
+    21300100: WormsSprites_50
+    21300102: WormsSprites_51
+    21300104: WormsSprites_52
+    21300106: WormsSprites_53
+    21300108: WormsSprites_54
+    21300110: WormsSprites_55
+    21300112: WormsSprites_56
+    21300114: WormsSprites_57
+    21300116: WormsSprites_58
+    21300118: WormsSprites_59
+    21300120: WormsSprites_60
+    21300122: WormsSprites_61
+    21300124: WormsSprites_62
+    21300126: WormsSprites_63
+    21300128: WormsSprites_64
+    21300130: WormsSprites_65
+    21300132: WormsSprites_66
+    21300134: WormsSprites_67
+    21300136: WormsSprites_68
+    21300138: WormsSprites_69
+    21300140: WormsSprites_70
+    21300142: WormsSprites_71
+    21300144: WormsSprites_72
+    21300146: WormsSprites_73
+    21300148: WormsSprites_74
+    21300150: WormsSprites_75
+    21300152: WormsSprites_76
+    21300154: WormsSprites_77
+    21300156: WormsSprites_78
+    21300158: WormsSprites_79
+    21300160: WormsSprites_80
+    21300162: WormsSprites_81
+    21300164: WormsSprites_82
+    21300166: WormsSprites_83
+    21300168: WormsSprites_84
+    21300170: WormsSprites_85
+    21300172: WormsSprites_86
+    21300174: WormsSprites_87
+    21300176: WormsSprites_88
+    21300178: WormsSprites_89
+    21300180: WormsSprites_90
+    21300182: WormsSprites_91
+    21300184: WormsSprites_92
+    21300186: WormsSprites_93
+    21300188: WormsSprites_94
+    21300190: WormsSprites_95
+    21300192: WormsSprites_96
+    21300194: WormsSprites_97
+    21300196: WormsSprites_98
+    21300198: WormsSprites_99
+    21300200: WormsSprites_100
+    21300202: WormsSprites_101
+    21300204: WormsSprites_102
+    21300206: WormsSprites_103
+    21300208: WormsSprites_104
+    21300210: WormsSprites_105
+    21300212: WormsSprites_106
+    21300214: WormsSprites_107
+    21300216: WormsSprites_108
+    21300218: WormsSprites_109
+    21300220: WormsSprites_110
+    21300222: WormsSprites_111
+    21300224: WormsSprites_112
+    21300226: WormsSprites_113
+    21300228: WormsSprites_114
+    21300230: WormsSprites_115
+    21300232: WormsSprites_116
+    21300234: WormsSprites_117
+    21300236: WormsSprites_118
+    21300238: WormsSprites_119
+    21300240: WormsSprites_120
+    21300242: WormsSprites_121
+    21300244: WormsSprites_122
+    21300246: WormsSprites_123
+    21300248: WormsSprites_124
+    21300250: WormsSprites_125
+    21300252: WormsSprites_126
+    21300254: WormsSprites_127
+    21300256: WormsSprites_128
+    21300258: WormsSprites_129
+    21300260: WormsSprites_130
+    21300262: WormsSprites_131
+    21300264: WormsSprites_132
+    21300266: WormsSprites_133
+    21300268: WormsSprites_134
+    21300270: WormsSprites_135
+    21300272: WormsSprites_136
+    21300274: WormsSprites_137
+    21300276: WormsSprites_138
+    21300278: WormsSprites_139
+    21300280: WormsSprites_140
+    21300282: WormsSprites_141
+    21300284: WormsSprites_142
+    21300286: WormsSprites_143
+    21300288: WormsSprites_144
+    21300290: WormsSprites_145
+    21300292: WormsSprites_146
+    21300294: WormsSprites_147
+    21300296: WormsSprites_148
+    21300298: WormsSprites_149
+    21300300: WormsSprites_150
+    21300302: WormsSprites_151
+    21300304: WormsSprites_152
+    21300306: WormsSprites_153
+    21300308: WormsSprites_154
+    21300310: WormsSprites_155
+    21300312: WormsSprites_156
+    21300314: WormsSprites_157
+    21300316: WormsSprites_158
+    21300318: WormsSprites_159
+    21300320: WormsSprites_160
+    21300322: WormsSprites_161
+    21300324: WormsSprites_162
+    21300326: WormsSprites_163
+    21300328: WormsSprites_164
+    21300330: WormsSprites_165
+    21300332: WormsSprites_166
+    21300334: WormsSprites_167
+    21300336: WormsSprites_168
+    21300338: WormsSprites_169
+    21300340: WormsSprites_170
+    21300342: WormsSprites_171
+    21300344: WormsSprites_172
+    21300346: WormsSprites_173
+    21300348: WormsSprites_174
+    21300350: WormsSprites_175
+    21300352: WormsSprites_176
+    21300354: WormsSprites_177
+    21300356: WormsSprites_178
+    21300358: WormsSprites_179
+    21300360: WormsSprites_180
+    21300362: WormsSprites_181
+    21300364: WormsSprites_182
+    21300366: WormsSprites_183
+    21300368: WormsSprites_184
+    21300370: WormsSprites_185
+    21300372: WormsSprites_186
+    21300374: WormsSprites_187
+    21300376: WormsSprites_188
+    21300378: WormsSprites_189
+    21300380: WormsSprites_190
+    21300382: WormsSprites_191
+    21300384: WormsSprites_192
+    21300386: WormsSprites_193
+    21300388: WormsSprites_194
+    21300390: WormsSprites_195
+    21300392: WormsSprites_196
+    21300394: WormsSprites_197
+    21300396: WormsSprites_198
+    21300398: WormsSprites_199
+    21300400: WormsSprites_200
+    21300402: WormsSprites_201
+    21300404: WormsSprites_202
+    21300406: WormsSprites_203
+    21300408: WormsSprites_204
+    21300410: WormsSprites_205
+    21300412: WormsSprites_206
+    21300414: WormsSprites_207
+    21300416: WormsSprites_208
+    21300418: WormsSprites_209
+    21300420: WormsSprites_210
+    21300422: WormsSprites_211
+    21300424: WormsSprites_212
+    21300426: WormsSprites_213
+    21300428: WormsSprites_214
+    21300430: WormsSprites_215
+    21300432: WormsSprites_216
+    21300434: WormsSprites_217
+    21300436: WormsSprites_218
+    21300438: WormsSprites_219
+    21300440: WormsSprites_220
+    21300442: WormsSprites_221
+    21300444: WormsSprites_222
+    21300446: WormsSprites_223
+    21300448: WormsSprites_224
+    21300450: WormsSprites_225
+    21300452: WormsSprites_226
+    21300454: WormsSprites_227
+    21300456: WormsSprites_228
+    21300458: WormsSprites_229
+    21300460: WormsSprites_230
+    21300462: WormsSprites_231
+    21300464: WormsSprites_232
+    21300466: WormsSprites_233
+    21300468: WormsSprites_234
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WormsSprites_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 542
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 542
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 539
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 541
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 540
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_5
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 539
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 542
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 539
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 539
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_9
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 545
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_10
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 543
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 543
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_12
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 548
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_13
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 543
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_14
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 543
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_15
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 546
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_16
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 545
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_17
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 543
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_18
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 547
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_19
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 545
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_20
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 544
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_21
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 546
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_22
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 546
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_23
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 544
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_24
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 545
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_25
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 543
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_26
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 541
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_27
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 545
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_28
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 544
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_29
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 541
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_30
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_31
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 548
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_32
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 546
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_33
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 497
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_34
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 497
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_35
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 494
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_36
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 499
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_37
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 498
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_38
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 495
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_39
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 499
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_40
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 496
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 494
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_42
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 490
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_43
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 510
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_44
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 495
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_45
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 493
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_46
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 491
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_47
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 497
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_48
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 496
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_49
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 495
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_50
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 500
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_51
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 497
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_52
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 496
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_53
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 501
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_54
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 501
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_55
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 498
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_56
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 502
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_57
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 502
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_58
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 500
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_59
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 501
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_60
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 499
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_61
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 495
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_62
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 497
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_63
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 434
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_64
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 393
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_65
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 443
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_66
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 443
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_67
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 455
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_68
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 453
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_69
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 452
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_70
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 451
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_71
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 450
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_72
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 452
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_73
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 452
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_74
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 451
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_75
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 450
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_76
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 447
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_77
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 449
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_78
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 448
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_79
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 448
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_80
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 452
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_81
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 451
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_82
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 448
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_83
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 450
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_84
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 450
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_85
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 447
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_86
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 449
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_87
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 446
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_88
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 444
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_89
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 447
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_90
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 447
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_91
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 444
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_92
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 449
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_93
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 447
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_94
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 445
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_95
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 448
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_96
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 450
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_97
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 442
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_98
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 388
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_99
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 386
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_100
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 393
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_101
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 397
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_102
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 396
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_103
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 394
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_104
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 398
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_105
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 397
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_106
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 398
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_107
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 398
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_108
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 392
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_109
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 401
+        width: 55
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_110
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 392
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_111
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 386
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_112
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 397
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_113
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 398
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_114
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 399
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_115
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 396
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_116
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 398
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_117
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 396
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_118
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 394
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_119
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 398
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_120
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 397
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_121
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 394
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_122
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 389
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_123
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 388
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_124
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 387
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_125
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 350
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_126
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 350
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_127
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 349
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_128
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 378
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_129
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 349
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_130
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 352
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_131
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 351
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_132
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 351
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_133
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 349
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_134
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 350
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_135
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 350
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_136
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 347
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_137
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 351
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_138
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 350
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_139
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 348
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_140
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 351
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_141
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 353
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_142
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 351
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_143
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 348
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_144
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 348
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_145
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 347
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_146
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 349
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_147
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 347
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_148
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 344
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_149
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 351
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_150
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 347
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_151
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 347
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_152
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 352
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_153
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 351
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_154
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 352
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_155
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 350
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_156
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 349
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_157
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 347
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_158
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 345
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_159
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 342
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_160
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 349
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_161
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 313
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_162
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 312
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_163
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 316
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_164
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 314
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_165
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 313
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_166
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 312
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_167
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 277
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_168
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 303
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_169
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 308
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_170
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 198
+        width: 130
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_171
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 312
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_172
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 312
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_173
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 308
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_174
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 308
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_175
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 305
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_176
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 299
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_177
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 299
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_178
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 299
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_179
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 277
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_180
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 279
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_181
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 278
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_182
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 282
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_183
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 284
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_184
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 282
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_185
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 281
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_186
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 281
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_187
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 282
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_188
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 281
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_189
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 281
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_190
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 283
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_191
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 283
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_192
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 284
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_193
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 297
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_194
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 281
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_195
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 277
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_196
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 281
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_197
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 280
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_198
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 274
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_199
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 276
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_200
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 281
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_201
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 207
+        width: 71
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_202
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 271
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_203
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 262
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_204
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 266
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_205
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 268
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_206
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 269
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_207
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 268
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_208
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 268
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_209
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 235
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_210
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 234
+        width: 121
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_211
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 220
+        width: 143
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_212
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 229
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_213
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 227
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_214
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 230
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_215
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 228
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_216
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 232
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_217
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 248
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_218
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 247
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_219
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 47
+        width: 102
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_220
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 242
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_221
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 225
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_222
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 179
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_223
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 184
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_224
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 192
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_225
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 181
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_226
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 175
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_227
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 179
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_228
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 183
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_229
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 172
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_230
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 184
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_231
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 202
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_232
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 202
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_233
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 181
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WormsSprites_234
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 13
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
