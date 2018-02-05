@@ -483,3 +483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe8f182cd6efc94f8f75424f7cec445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terrainWidth: 513
+  sceneWidth: 15
+  height: 2.95
+  roughness: 0.48
+  y_offset: 4
