@@ -18,10 +18,26 @@ public class TerrainLoader : MonoBehaviour {
     [SerializeField]
     float y_offset = 0.0f;
 
+    [SerializeField]
+    float voxel_size = 0.1f;
+
+    [SerializeField]
+    GameObject voxel;
+
     void Start () {
         MidPointDisplacement t = new MidPointDisplacement(terrainWidth, sceneWidth, height, roughness, y_offset);
 
         GetComponent<LineRenderer>().positionCount = t.terrainData.Length;
         GetComponent<LineRenderer>().SetPositions(t.terrainData);
+
+        rasterize(t.terrainData);
 	}
+
+    void rasterize(Vector3[] data) {
+        for (int i = 0; i < data.Length; i++) {
+            for (float y = data[i].y + 0.5f; y > -5.0f; y -= 0.1f) {
+                Instantiate(voxel, new Vector3(data[i].x, y, -1.0f), Quaternion.Euler(0, 0, 0));
+            }
+        }
+    }
 }

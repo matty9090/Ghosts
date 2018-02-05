@@ -487,4 +487,5 @@ MonoBehaviour:
   sceneWidth: 15
   height: 2.95
   roughness: 0.48
-  y_offset: 4
+  y_offset: -1.45
+  voxel: {fileID: 1735536844790624, guid: d3ec33b11c130a7408ccf691167b677f, type: 2}

@@ -30,8 +30,7 @@ public class MidPointDisplacement : TerrainGenerator {
             int k = (width - 1) / (int)Mathf.Pow(2.0f, (float)i);
 
             for (int j = 0; j <= width - k; j += k) {
-                int jh = j + (k / 2);
-                terrain[jh] = ((terrain[j] + terrain[j + k]) / 2.0f);
+                terrain[j + (k / 2)] = ((terrain[j] + terrain[j + k]) / 2.0f);
                 terrain[j + (k / 2)] += Random.Range(-h, h);
             }
 
