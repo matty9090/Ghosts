@@ -24,12 +24,17 @@ public class TerrainLoader : MonoBehaviour {
     [SerializeField]
     GameObject voxel;
 
+    EdgeCollider2D terrainCollider;
+
     void Start () {
         MidPointDisplacement t = new MidPointDisplacement(terrainWidth, sceneWidth, height, roughness, y_offset);
 
         GetComponent<LineRenderer>().positionCount = t.terrainData.Length;
         GetComponent<LineRenderer>().SetPositions(t.terrainData);
         
+        terrainCollider = GetComponent<EdgeCollider2D>();
+        terrainCollider.points = t.terrainData2D;
+
         rasterize(t.terrainData);
 	}
 
