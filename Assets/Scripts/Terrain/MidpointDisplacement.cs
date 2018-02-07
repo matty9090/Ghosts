@@ -12,12 +12,12 @@ public class MidPointDisplacement : TerrainGenerator {
 
     float[] terrain;
 
-    public MidPointDisplacement(int width, int scene_width, float height, float roughness, float off) : base(width, scene_width, off) {
+    public MidPointDisplacement(int width, int scene_width, float height, float roughness, float x_off, float y_off) : base(width, scene_width, x_off, y_off) {
         h = height;
         r = roughness;
-        iterations = (int)Mathf.Log((float)(width - 1), 2.0f);
 
-        terrain = new float[width];
+        iterations  = (int)Mathf.Log((float)(width - 1), 2.0f);
+        terrain     = new float[width];
 
         generate();
     }
@@ -38,7 +38,7 @@ public class MidPointDisplacement : TerrainGenerator {
         }
 
         for (int i = 0; i < width; i++) {
-            terrainCoords[i] = new Vector3(i * ratio - 7.0f, terrain[i] + y_offset, 1.0f);
+            terrainCoords[i] = new Vector3(i * ratio + x_offset, terrain[i] + y_offset, 1.0f);
             terrainCoords2D[i] = new Vector2(terrainCoords[i].x, terrainCoords[i].y);
         }
     }
