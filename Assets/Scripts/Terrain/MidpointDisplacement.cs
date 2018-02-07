@@ -38,7 +38,7 @@ public class MidPointDisplacement : TerrainGenerator {
         }
 
         for (int i = 0; i < width; i++) {
-            terrainCoords[i] = new Vector3(i * ratio + x_offset, terrain[i] + y_offset, 1.0f);
+            terrainCoords[i] = new Vector3(i * ratio + x_offset, terrain[i] + y_offset, 0.0f);
             terrainCoords2D[i] = new Vector2(terrainCoords[i].x, terrainCoords[i].y);
         }
     }

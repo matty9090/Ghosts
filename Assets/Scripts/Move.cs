@@ -3,13 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour {
+    [SerializeField]
+    float explosionRadius;
+
+    bool collided;
+
 	private void Start () {
-        GetComponent<Rigidbody>().velocity = new Vector3(9.0f, 10.0f, 0.0f);
+        collided = false;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(5.0f, 10.0f);
     }
 
     private void Update() {
-        Vector3 vel = GetComponent<Rigidbody>().velocity;
+        Vector3 vel = GetComponent<Rigidbody2D>().velocity;
         transform.rotation = Quaternion.LookRotation(-vel);
-        transform.Rotate(new Vector3(0, 90, 0));
+        transform.Rotate(new Vector2(0, 90));
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if(!collided && collision.gameObject.tag == "Ground") {
+            GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
+            collided = true;
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -30,7 +30,6 @@ public class WormMovement : MonoBehaviour {
         {
             velocity = new Vector2(rb.velocity.x, rb.velocity.y);
         }
-        
 
         if (Input.GetKey(KeyCode.Space))
         {
@@ -59,9 +58,7 @@ public class WormMovement : MonoBehaviour {
                 facing = 1;
                 ani.SetInteger("State", 1);
             }
-
         }
-       
        
         rb.velocity = velocity;
         
@@ -73,7 +70,6 @@ public class WormMovement : MonoBehaviour {
             isGrounded = true;
 
     }
-
 }
 
 
