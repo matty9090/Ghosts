@@ -60,7 +60,7 @@ public class TerrainLoader : MonoBehaviour {
             VoxelCol col = new VoxelCol();
             col.voxels = new List<GameObject>();
 
-            for (float y = data[i].y - 0.12f; y > -4.2f; y -= 0.12f)
+            for (float y = data[i].y - 0.12f; y > -4.2f; y -= 0.08f)
                 col.voxels.Add(Instantiate(voxel, new Vector3(data[i].x, y, -1.0f), Quaternion.Euler(0, 0, 0)));
 
             voxels.Add(col);

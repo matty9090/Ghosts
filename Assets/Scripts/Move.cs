@@ -23,7 +23,7 @@ public class Move : MonoBehaviour {
         if(!collided && collision.gameObject.tag == "Ground") {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             collided = true;
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

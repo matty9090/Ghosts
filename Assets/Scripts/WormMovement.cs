@@ -9,6 +9,13 @@ public class WormMovement : MonoBehaviour {
     private Vector2 velocity = Vector2.zero;
     private int facing = -1;
     private bool isGrounded = true;
+    private int maxRotation = 90;
+    private int minRotation = -90;
+    private int currentRotation = 0;
+    private int RotationSpeed = 1;
+
+    public GameObject crosshair;
+    public GameObject TestMissle;
 
     // Use this for initialization
 	void Start ()
@@ -16,6 +23,7 @@ public class WormMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
+
 	}
 	
 	// Update is called once per frame
@@ -46,17 +54,63 @@ public class WormMovement : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.A))
             {
-                sr.flipX = false;
+                if (sr.flipX == true)
+                {
+                    sr.flipX = false;
+                    crosshair.transform.RotateAround(transform.position, Vector3.forward, 180 - 2*(currentRotation));
+                    
+                }
                 velocity.x = -1;
                 facing = -1;
                 ani.SetInteger("State", 1);
             }
             else if (Input.GetKey(KeyCode.D))
             {
-                sr.flipX = true;
+                if (sr.flipX == false)
+                {
+                    sr.flipX = true;
+                    crosshair.transform.RotateAround(transform.position, Vector3.back, 180 - 2*(currentRotation));
+                }
                 velocity.x = 1;
                 facing = 1;
                 ani.SetInteger("State", 1);
+            }
+            else if (Input.GetKey(KeyCode.W))
+            {
+                if (currentRotation < maxRotation)
+                {
+                    if (sr.flipX == false)
+                    {
+                        currentRotation += RotationSpeed;
+                        crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
+                    }
+                    else
+                    {
+                        currentRotation += RotationSpeed;
+                        crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
+                    }
+                }
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                if (currentRotation > minRotation)
+                {
+                    if (sr.flipX == false)
+                    {
+                        currentRotation -= RotationSpeed;
+                        crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
+                    }
+                    else
+                    {
+                        currentRotation -= RotationSpeed;
+                        crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
+                    }
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Instantiate(TestMissle, crosshair.transform);
             }
         }
        
