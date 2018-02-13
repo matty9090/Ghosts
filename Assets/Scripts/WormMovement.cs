@@ -110,7 +110,10 @@ public class WormMovement : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Instantiate(TestMissle, crosshair.transform);
+                Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y,0.0f);
+                Vector2 fromPlayerToCross = crosshair.transform.position - transform.position;
+                var obj = (GameObject)Instantiate(TestMissle, tmp, Quaternion.LookRotation(fromPlayerToCross));
+                obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
             }
         }
        

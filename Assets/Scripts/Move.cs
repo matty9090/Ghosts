@@ -10,13 +10,14 @@ public class Move : MonoBehaviour {
 
 	private void Start () {
         collided = false;
-        GetComponent<Rigidbody2D>().velocity = new Vector2(5.0f, 10.0f);
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(5.0f, 10.0f);
     }
 
     private void Update() {
         Vector3 vel = GetComponent<Rigidbody2D>().velocity;
         transform.rotation = Quaternion.LookRotation(-vel);
         transform.Rotate(new Vector2(0, 90));
+        Debug.Log(vel);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
