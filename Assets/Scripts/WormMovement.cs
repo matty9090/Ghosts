@@ -9,8 +9,8 @@ public class WormMovement : MonoBehaviour {
     private Vector2 velocity = Vector2.zero;
     private int facing = -1;
     private bool isGrounded = true;
-    private int maxRotation = 90;
-    private int minRotation = -90;
+    private int maxRotation = 89;
+    private int minRotation = -89;
     private int currentRotation = 0;
     private int RotationSpeed = 1;
 

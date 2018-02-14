@@ -17,7 +17,6 @@ public class Move : MonoBehaviour {
         Vector3 vel = GetComponent<Rigidbody2D>().velocity;
         transform.rotation = Quaternion.LookRotation(-vel);
         transform.Rotate(new Vector2(0, 90));
-        Debug.Log(vel);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
