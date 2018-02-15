@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WormMovement : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator ani;
     private Vector2 velocity = Vector2.zero;
+
     private int facing = -1;
     private bool isGrounded = true;
     private int maxRotation = 89;
     private int minRotation = -89;
     private int currentRotation = 0;
     private int RotationSpeed = 1;
+    private int health = 100;
 
+    public Image healthBar;
     public GameObject crosshair;
     public GameObject TestMissle;
 
@@ -23,7 +27,6 @@ public class WormMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
-
 	}
 	
 	// Update is called once per frame
@@ -47,6 +50,7 @@ public class WormMovement : MonoBehaviour {
                 velocity.x = 1f * facing;
                 velocity.y = 5f;
                 ani.SetInteger("State", 2);
+                takeDamage(10);
             }
             
         }
@@ -123,9 +127,16 @@ public class WormMovement : MonoBehaviour {
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-       if (coll.gameObject.tag == "Ground")
+        if (coll.gameObject.tag == "Ground")
             isGrounded = true;
+    }
 
+    void takeDamage(int amount)
+    {
+        health -= amount;
+        healthBar.fillAmount = (float)health / 100.0f;
+
+        // TODO: Die when health < 0
     }
 }
 
