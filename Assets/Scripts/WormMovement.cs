@@ -120,13 +120,14 @@ public class WormMovement : MonoBehaviour {
                     Vector2 fromPlayerToCross = crosshair.transform.position - transform.position;
                     var obj = (GameObject)Instantiate(TestMissle, tmp, Quaternion.LookRotation(fromPlayerToCross));
                     obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
+
+                    GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
                 }
             }
 
         }
 
         rb.velocity = velocity;
-        
     }
 
     void OnCollisionEnter2D (Collision2D coll)

@@ -212,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4937398889879042, guid: 524c238a995dcbb4f831849673514e52, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1553420976988050, guid: 524c238a995dcbb4f831849673514e52, type: 2}
       propertyPath: m_Name
@@ -549,10 +549,10 @@ RectTransform:
   m_Father: {fileID: 1495193893}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 513, y: 233.1}
-  m_SizeDelta: {x: 102.2, y: 68.8}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -58.4, y: -34.4}
+  m_SizeDelta: {x: 102.20001, y: 68.79999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526938871
 MonoBehaviour:
@@ -586,7 +586,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: '60
+
+'
 --- !u!222 &1526938872
 CanvasRenderer:
   m_ObjectHideFlags: 0

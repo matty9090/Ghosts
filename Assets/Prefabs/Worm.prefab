@@ -213,6 +213,7 @@ MonoBehaviour:
   healthBar: {fileID: 114896823927001192}
   crosshair: {fileID: 1993715665119218}
   TestMissle: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
+  isTurn: 0
 --- !u!114 &114896823927001192
 MonoBehaviour:
   m_ObjectHideFlags: 1

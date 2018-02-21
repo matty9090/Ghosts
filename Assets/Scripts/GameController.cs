@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour {
     private float timer;
 
     [SerializeField]
-    float turnTime = 60.0f;
+    float turnTime = 60.9f;
 
 	void Start () {
         timer = turnTime;
@@ -47,8 +47,9 @@ public class GameController : MonoBehaviour {
 	}
 
     void changeWorm(int team) {
-        if(currentWorm)
+        if (currentWorm) {
             currentWorm.GetComponent<WormMovement>().isTurn = false;
+        }
 
         if (team == 1)
             currentWorm = team1[Random.Range(0, team1.Count)];
@@ -56,5 +57,13 @@ public class GameController : MonoBehaviour {
             currentWorm = team2[Random.Range(0, team2.Count)];
 
         currentWorm.GetComponent<WormMovement>().isTurn = true;
+    }
+
+    public float Timer {
+        get {
+            return timer;
+        } set {
+            timer = value;
+        }
     }
 }
