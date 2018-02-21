@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
     private GameObject currentWorm;
     private List<GameObject> team1, team2;
+
+    [SerializeField]
+    private Text timerText;
 
     private int currentTeam;
     private float timer;
@@ -33,6 +37,7 @@ public class GameController : MonoBehaviour {
 	
 	void Update () {
         timer -= Time.deltaTime;
+        timerText.text = (int)timer + "";
 
         if (timer < 0.0f) {
             timer = turnTime;
