@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114641285251535126}
   - component: {fileID: 54008974728158274}
   - component: {fileID: 95823124570939038}
+  - component: {fileID: 114256153552754298}
   m_Layer: 0
   m_Name: RocketLarge
   m_TagString: Untagged
@@ -200,6 +201,19 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &114256153552754298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385964809073576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3830d426626954fa8a18a1a4bd37f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionRadius: 1.75
+  explosion: {fileID: 1450698005622652, guid: 2ab0514e770a28a4fbfb68ef647a80b9, type: 2}
 --- !u!114 &114641285251535126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c51c3006ca72dd47b763c72ddda85b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionRadius: 0
+  explosion: {fileID: 0}
 --- !u!198 &198833495271322926
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
+public class Rocket : MonoBehaviour {
     [SerializeField]
     float explosionRadius;
 
@@ -13,7 +13,7 @@ public class Move : MonoBehaviour {
     Vector3 vel;
 
 
-    private void Start () {
+    private void Start() {
         collided = false;
         //GetComponent<Rigidbody2D>().velocity = new Vector2(5.0f, 10.0f);
     }
@@ -25,7 +25,7 @@ public class Move : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if(!collided && collision.gameObject.tag == "Ground") {
+        if (!collided && collision.gameObject.tag == "Ground") {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
             Destroy(expl, 0.5f);

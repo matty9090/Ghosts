@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 199441778019282896}
   - component: {fileID: 50918898474539020}
   - component: {fileID: 61219281520893656}
-  - component: {fileID: 114169904135833538}
+  - component: {fileID: 114976001578910794}
   m_Layer: 0
   m_Name: RocketSmall
   m_TagString: Untagged
@@ -231,7 +231,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!114 &114169904135833538
+--- !u!114 &114976001578910794
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1082034073777032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c51c3006ca72dd47b763c72ddda85b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b3830d426626954fa8a18a1a4bd37f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 1
