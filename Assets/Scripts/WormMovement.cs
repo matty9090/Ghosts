@@ -53,7 +53,6 @@ public class WormMovement : MonoBehaviour {
                     velocity.x = 1f * facing;
                     velocity.y = 5f;
                     ani.SetInteger("State", 2);
-                    takeDamage(10);
                 }
 
             }
