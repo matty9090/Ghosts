@@ -7,6 +7,9 @@ public class Rocket : MonoBehaviour {
     float explosionRadius;
 
     [SerializeField]
+    int rocketDamage;
+
+    [SerializeField]
     GameObject explosion;
 
     bool collided;
@@ -28,6 +31,18 @@ public class Rocket : MonoBehaviour {
         if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player")) {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
+
+            List<GameObject> worms = GameObject.Find("Game").GetComponent<GameController>().getAllWorms();
+
+            foreach(GameObject worm in worms) {
+                float dx = worm.transform.position.x - collision.collider.transform.position.x;
+                float dy = worm.transform.position.y - collision.collider.transform.position.y;
+
+                if (dx * dx + dy * dy < explosionRadius * explosionRadius) {
+                    worm.GetComponent<WormMovement>().takeDamage(rocketDamage);
+                }
+            }
+
             Destroy(expl, 0.5f);
 
             collided = true;

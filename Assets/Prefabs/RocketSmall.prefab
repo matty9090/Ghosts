@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 1
+  rocketDamage: 40
   explosion: {fileID: 1450698005622652, guid: 2ab0514e770a28a4fbfb68ef647a80b9, type: 2}
 --- !u!198 &198788549848156528
 ParticleSystem:

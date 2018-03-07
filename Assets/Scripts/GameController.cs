@@ -59,6 +59,15 @@ public class GameController : MonoBehaviour {
         currentWorm.GetComponent<WormMovement>().isTurn = true;
     }
 
+    public List<GameObject> getAllWorms() {
+        List<GameObject> allWorms = new List<GameObject>();
+
+        allWorms.AddRange(team1);
+        allWorms.AddRange(team2);
+
+        return allWorms;
+    }
+
     public float Timer {
         get {
             return timer;

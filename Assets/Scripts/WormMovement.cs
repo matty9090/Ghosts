@@ -136,7 +136,7 @@ public class WormMovement : MonoBehaviour {
             isGrounded = true;
     }
 
-    void takeDamage(int amount)
+    public void takeDamage(int amount)
     {
         health -= amount;
         healthBar.fillAmount = (float)health / 100.0f;

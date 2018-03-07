@@ -86,7 +86,7 @@ public class TerrainLoader : MonoBehaviour {
                     dx *= dx;
                     dy *= dy;
 
-                    if (Mathf.Sqrt(dx + dy) <= radius) {
+                    if (dx + dy <= radius * radius) {
                         Destroy(v);
                         voxels.Remove(index);
                     }
