@@ -38,8 +38,14 @@ public class Rocket : MonoBehaviour {
                 float dx = worm.transform.position.x - collision.collider.transform.position.x;
                 float dy = worm.transform.position.y - collision.collider.transform.position.y;
 
+                Vector2 dir   = (new Vector2(dx, dy)).normalized;
+                Vector2 force = new Vector2((explosionRadius - Mathf.Abs(dx))*dir.x * 300.0f, (explosionRadius - Mathf.Abs(dy)) * dir.y * 300.0f);
+
                 if (dx * dx + dy * dy < explosionRadius * explosionRadius) {
                     worm.GetComponent<WormMovement>().takeDamage(rocketDamage);
+                    worm.GetComponent<Rigidbody2D>().AddForce(force);
+
+                    worm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Knockback;
                 }
             }
 

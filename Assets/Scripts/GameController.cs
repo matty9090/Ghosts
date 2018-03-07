@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour {
 
     void changeWorm(int team) {
         if (currentWorm) {
-            currentWorm.GetComponent<WormMovement>().isTurn = false;
+            currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
         }
 
         if (team == 1)
@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour {
         else
             currentWorm = team2[Random.Range(0, team2.Count)];
 
-        currentWorm.GetComponent<WormMovement>().isTurn = true;
+        currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Playing;
     }
 
     public List<GameObject> getAllWorms() {
