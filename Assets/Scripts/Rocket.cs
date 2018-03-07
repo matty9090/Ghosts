@@ -25,7 +25,7 @@ public class Rocket : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (!collided && collision.gameObject.tag == "Ground") {
+        if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player")) {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
             Destroy(expl, 0.5f);
