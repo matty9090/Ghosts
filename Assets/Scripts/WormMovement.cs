@@ -25,8 +25,7 @@ public class WormMovement : MonoBehaviour {
     public WormState wormState;
 
     // Use this for initialization
-	void Start ()
-    {
+	void Start () {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
@@ -134,12 +133,15 @@ public class WormMovement : MonoBehaviour {
             isGrounded = true;
     }
 
-    public void takeDamage(int amount)
+    public bool takeDamage(int amount)
     {
         health -= amount;
         healthBar.fillAmount = (float)health / 100.0f;
 
-        // TODO: Die when health < 0
+        if (health < 0)
+            return true;
+
+        return false;
     }
 }
 

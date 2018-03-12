@@ -34,7 +34,9 @@ public class Rocket : MonoBehaviour {
 
             List<GameObject> worms = GameObject.Find("Game").GetComponent<GameController>().getAllWorms();
 
-            foreach(GameObject worm in worms) {
+            for(int i = worms.Count - 1; i >= 0; i--) {
+                GameObject worm = worms[i];
+
                 float dx = worm.transform.position.x - collision.collider.transform.position.x;
                 float dy = worm.transform.position.y - collision.collider.transform.position.y;
 
@@ -42,10 +44,13 @@ public class Rocket : MonoBehaviour {
                 Vector2 force = new Vector2((explosionRadius - Mathf.Abs(dx))*dir.x * 300.0f, (explosionRadius - Mathf.Abs(dy)) * dir.y * 300.0f);
 
                 if (dx * dx + dy * dy < explosionRadius * explosionRadius) {
-                    worm.GetComponent<WormMovement>().takeDamage(rocketDamage);
-                    worm.GetComponent<Rigidbody2D>().AddForce(force);
-
-                    worm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Knockback;
+                    if (!worm.GetComponent<WormMovement>().takeDamage(rocketDamage)) {
+                        worm.GetComponent<Rigidbody2D>().AddForce(force);
+                        worm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Knockback;
+                    } else {
+                        worms.RemoveAt(i);
+                        Destroy(worm);
+                    }
                 }
             }
 
