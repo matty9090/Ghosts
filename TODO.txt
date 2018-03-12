@@ -1,0 +1,9 @@
+TODO:
+ - Worms need to die
+ - GUI
+ - Damage numbers
+ - Arrow pointing to worm
+ - Change spritesheets
+ - Add more worms for each team
+ - Add more weapons
+ - Add background
