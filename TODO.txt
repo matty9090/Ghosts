@@ -1,5 +1,4 @@
 TODO:
- - Worms need to die
  - GUI
  - Damage numbers
  - Arrow pointing to worm
