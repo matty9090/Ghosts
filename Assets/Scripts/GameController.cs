@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour {
     float turnTime = 60.9f;
 
 	void Start () {
+        DamageNumberController.initialize();
+
         timer = turnTime;
 
         team1 = new List<GameObject>();
