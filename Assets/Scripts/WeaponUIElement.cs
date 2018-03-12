@@ -11,7 +11,7 @@ public struct WeaponUIEl {
     public GameObject prefab;
 
     [SerializeField]
-    public Texture2D img;
+    public Image img;
 }
 
 public class WeaponUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {

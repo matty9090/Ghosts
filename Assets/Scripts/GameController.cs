@@ -8,10 +8,14 @@ public class GameController : MonoBehaviour {
     private List<GameObject> team1, team2;
 
     [SerializeField]
+    private GameObject weaponUI;
+
+    [SerializeField]
     private Text timerText;
 
     private int currentTeam;
     private float timer;
+    private bool showUI;
 
     [SerializeField]
     float turnTime = 60.9f;
@@ -19,6 +23,7 @@ public class GameController : MonoBehaviour {
 	void Start () {
         DamageNumberController.initialize();
 
+        showUI = true;
         timer = turnTime;
 
         team1 = new List<GameObject>();
@@ -45,6 +50,11 @@ public class GameController : MonoBehaviour {
             timer = turnTime;
             currentTeam = (currentTeam % 2) + 1;
             changeWorm(currentTeam);
+        }
+
+        if (Input.GetKeyUp(KeyCode.U)) {
+            showUI = !showUI;
+            weaponUI.SetActive(showUI);
         }
 	}
 

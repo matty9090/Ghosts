@@ -6,18 +6,14 @@ public class DamageNumberController : MonoBehaviour {
     private static DamageNumbers popupText;
     private static GameObject canvas;
 
-    public static void initialize()
-    {
-        Debug.Log("GHHHHHHHHHHHHHHHHHHHHHH");
-
+    public static void initialize() {
         canvas = GameObject.Find("UI");
+
         if(!popupText)
             popupText = Resources.Load<DamageNumbers>("Prefabs/PopupTextParent");
-        
     }
 
-	public static void CreateFloatingText(string text, Transform location)
-    {
+	public static void CreateFloatingText(string text, Transform location) {
         DamageNumbers instance = Instantiate(popupText);
         Vector2 screenPostion = Camera.main.WorldToScreenPoint(location.position);
         instance.transform.SetParent(canvas.transform, false);

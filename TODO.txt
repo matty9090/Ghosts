@@ -1,6 +1,6 @@
 TODO:
  - GUI
- - Damage numbers
+ - Animation for GUI
  - Arrow pointing to worm
  - Change spritesheets
  - Add more worms for each team

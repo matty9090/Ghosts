@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -458,9 +458,9 @@ MonoBehaviour:
   listElement: {fileID: 401415850}
   weapons:
   - prefab: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
-    img: {fileID: 21300002, guid: e2572b29337db9e46b54154ce3eafaf0, type: 3}
+    img: {fileID: 0}
   - prefab: {fileID: 1385964809073576, guid: 9c167a537d59aca458991984cb3df775, type: 2}
-    img: {fileID: 21300066, guid: e2572b29337db9e46b54154ce3eafaf0, type: 3}
+    img: {fileID: 0}
 --- !u!1 &739235154
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586e96e889bbe5c48aedddfb7ae364bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponUI: {fileID: 695528657}
   timerText: {fileID: 1526938871}
   turnTime: 60
 --- !u!4 &803025469
