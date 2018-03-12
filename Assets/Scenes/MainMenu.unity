@@ -661,6 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuItems:
   - {fileID: 1785995694}
+  - {fileID: 525406154}
 --- !u!1 &962233411
 GameObject:
   m_ObjectHideFlags: 0
