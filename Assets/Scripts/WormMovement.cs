@@ -36,6 +36,7 @@ public class WormMovement : MonoBehaviour {
 	}
 	
     void stateIdle() {
+        crosshair.GetComponent<SpriteRenderer>().enabled = false;
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);
             ani.SetInteger("State", 0);
@@ -44,6 +45,7 @@ public class WormMovement : MonoBehaviour {
     }
 
     void stateKnockback() {
+        crosshair.GetComponent<SpriteRenderer>().enabled = false;
         // if (isGrounded)
         //    wormState = WormState.Idle;
 
@@ -51,6 +53,7 @@ public class WormMovement : MonoBehaviour {
     }
 
     void statePlaying() {
+        crosshair.GetComponent<SpriteRenderer>().enabled = true;
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);
             ani.SetInteger("State", 0);
