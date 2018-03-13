@@ -36,11 +36,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4575774869620926}
   - component: {fileID: 212745595247182450}
+  - component: {fileID: 95823124570939038}
   - component: {fileID: 198833495271322926}
   - component: {fileID: 199453756288163840}
-  - component: {fileID: 114641285251535126}
-  - component: {fileID: 54008974728158274}
-  - component: {fileID: 95823124570939038}
+  - component: {fileID: 50377141694716324}
+  - component: {fileID: 61521236924295794}
   - component: {fileID: 114256153552754298}
   m_Layer: 0
   m_Name: RocketLarge
@@ -56,8 +56,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385964809073576}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -7.61, y: 0.76, z: 1}
-  m_LocalScale: {x: 3.0353758, y: 2.4240556, z: 1}
+  m_LocalPosition: {x: -2.2475786, y: 0.10161421, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4990286586429462}
   m_Father: {fileID: 0}
@@ -76,21 +76,51 @@ Transform:
   m_Father: {fileID: 4575774869620926}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1}
---- !u!54 &54008974728158274
-Rigidbody:
+--- !u!50 &50377141694716324
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385964809073576}
-  serializedVersion: 2
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
   m_Mass: 1
-  m_Drag: 0
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_Constraints: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61521236924295794
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385964809073576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0010397434, y: 0.0039647147}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.24, y: 0.32}
+    newSize: {x: 0.62, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2354999, y: 0.21476816}
+  m_EdgeRadius: 0
 --- !u!95 &95823124570939038
 Animator:
   serializedVersion: 3
@@ -213,20 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 1.75
+  rocketDamage: 0
   explosion: {fileID: 1450698005622652, guid: 2ab0514e770a28a4fbfb68ef647a80b9, type: 2}
---- !u!114 &114641285251535126
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1385964809073576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c51c3006ca72dd47b763c72ddda85b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionRadius: 0
-  explosion: {fileID: 0}
 --- !u!198 &198833495271322926
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -287,7 +305,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -432282614
+  randomSeed: -1109283156
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -731,12 +749,12 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 5
+    angle: 5.0000143
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: -2, y: 0, z: 1}
+    m_Position: {x: -0.78, y: 0, z: 1}
     m_Rotation: {x: 0, y: -90, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
