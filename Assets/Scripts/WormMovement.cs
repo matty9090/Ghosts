@@ -29,13 +29,13 @@ public class WormMovement : MonoBehaviour {
     public WormState wormState;
 
     // Use this for initialization
-	void Start () {
+	void Awake () {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
         wormState = WormState.Idle;
         wormNametxt.text = wormName;
-	}
+    }
 	
     void stateIdle() {
         crosshair.GetComponent<SpriteRenderer>().enabled = false;
@@ -56,6 +56,7 @@ public class WormMovement : MonoBehaviour {
 
     void statePlaying() {
         crosshair.GetComponent<SpriteRenderer>().enabled = true;
+
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);
             ani.SetInteger("State", 0);

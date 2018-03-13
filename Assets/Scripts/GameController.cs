@@ -58,8 +58,8 @@ public class GameController : MonoBehaviour {
         currentTeam = Random.Range(1, 3);
         changeWorm(currentTeam);
 
-        gameOverTxt.SetActive(false);
-        gameOverFade.SetActive(false);
+        gameOverTxt.GetComponent<Text>().enabled = false;
+        gameOverFade.GetComponent<Image>().enabled = false;
     }
 	
 	void Update () {
@@ -116,8 +116,8 @@ public class GameController : MonoBehaviour {
 
         if (team1.Count <= 0 || team2.Count <= 0) {
             gameState = GameStates.GameOver;
-            gameOverTxt.SetActive(true);
-            gameOverFade.SetActive(true);
+            gameOverTxt.GetComponent<Text>().enabled = true;
+            gameOverFade.GetComponent<Image>().enabled = true;
 
             gameOverTxt.GetComponent<Animation>().Play();
             gameOverFade.GetComponent<Animation>().Play();
