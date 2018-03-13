@@ -53,7 +53,7 @@ public class TerrainLoader : MonoBehaviour {
 
     void rasterize(Vector3[] data) {
         for (int i = 0; i < data.Length; i++) {
-            for (float y = data[i].y - 0.12f; y > -4.2f; y -= voxel_size) {
+            for (float y = data[i].y - 0.12f; y > -3.3f; y -= voxel_size) {
                 string index = i + "," + (int)(y / ratio);
                 voxels[index] = Instantiate(voxel, new Vector3(data[i].x, y, -1.0f), Quaternion.Euler(0, 0, 0));
             }
