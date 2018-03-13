@@ -20,8 +20,13 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     float turnTime = 60.9f;
 
+    enum GameStates { Playing, GameOver }
+    GameStates gameState;
+
 	void Start () {
         DamageNumberController.initialize();
+
+        gameState = GameStates.Playing;
 
         showUI = true;
         timer = turnTime;
@@ -49,25 +54,33 @@ public class GameController : MonoBehaviour {
 	}
 	
 	void Update () {
-        timer -= Time.deltaTime;
-        timerText.text = (int)timer + "";
+        switch(gameState) {
+            case GameStates.Playing:
+                timer -= Time.deltaTime;
+                timerText.text = (int)timer + "";
 
-        if (timer < 0.0f) {
-            timer = turnTime;
-            currentTeam = (currentTeam % 2) + 1;
-            changeWorm(currentTeam);
-        }
+                if (timer < 0.0f) {
+                    timer = turnTime;
+                    currentTeam = (currentTeam % 2) + 1;
+                    changeWorm(currentTeam);
+                }
 
-        if (Input.GetKeyUp(KeyCode.U)) {
-            showUI = !showUI;
-            weaponUI.SetActive(showUI);
+                if (Input.GetKeyUp(KeyCode.U)) {
+                    showUI = !showUI;
+                    weaponUI.SetActive(showUI);
+                }
+
+                break;
+
+            case GameStates.GameOver:
+
+                break;
         }
 	}
 
     void changeWorm(int team) {
-        if (currentWorm) {
+        if (currentWorm)
             currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
-        }
 
         if (team == 1)
             currentWorm = team1[Random.Range(0, team1.Count)];
@@ -91,6 +104,12 @@ public class GameController : MonoBehaviour {
             team1.Remove(worm);
         else if (team2.Contains(worm))
             team2.Remove(worm);
+
+        if(team1.Count <= 0 || team2.Count <= 0) {
+            gameState = GameStates.GameOver;
+            GameObject.Find("txtGameOver").SetActive(true);
+            GameObject.Find("GameOverFade").SetActive(true);
+        }
     }
 
     public void hideUI() {
