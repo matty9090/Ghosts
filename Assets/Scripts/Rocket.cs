@@ -41,7 +41,7 @@ public class Rocket : MonoBehaviour {
                 float dy = worm.transform.position.y - collision.collider.transform.position.y;
 
                 Vector2 dir   = (new Vector2(dx, dy)).normalized;
-                Vector2 force = new Vector2((explosionRadius - Mathf.Abs(dx))*dir.x * 300.0f, (explosionRadius - Mathf.Abs(dy)) * dir.y * 300.0f);
+                Vector2 force = new Vector2((explosionRadius - Mathf.Abs(dx)) * dir.x * 300.0f, (explosionRadius - Mathf.Abs(dy)) * dir.y * 300.0f);
 
                 if (dx * dx + dy * dy < explosionRadius * explosionRadius) {
                     if (!worm.GetComponent<WormMovement>().takeDamage(rocketDamage)) {
@@ -49,6 +49,7 @@ public class Rocket : MonoBehaviour {
                         worm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Knockback;
                     } else {
                         worms.RemoveAt(i);
+                        GameObject.Find("Game").GetComponent<GameController>().removeWorm(worm);
                         Destroy(worm);
                     }
                 }

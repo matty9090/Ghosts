@@ -80,6 +80,13 @@ public class GameController : MonoBehaviour {
         return allWorms;
     }
 
+    public void removeWorm(GameObject worm) {
+        if (team1.Contains(worm))
+            team1.Remove(worm);
+        else if (team2.Contains(worm))
+            team2.Remove(worm);
+    }
+
     public float Timer {
         get {
             return timer;
