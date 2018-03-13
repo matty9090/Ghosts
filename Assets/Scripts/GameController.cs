@@ -34,7 +34,9 @@ public class GameController : MonoBehaviour {
 
         gameState = GameStates.Playing;
 
-        showUI = true;
+        showUI = false;
+        hideUI();
+
         timer = turnTime;
 
         team1 = new List<GameObject>();
@@ -47,13 +49,11 @@ public class GameController : MonoBehaviour {
             team1.Add(team1Node.transform.GetChild(i).gameObject);
             team1[i].GetComponent<WormMovement>().setTextColour(Color.cyan);
         }
-           
 
         for (int i = 0; i < team2Node.transform.childCount; i++){
             team2.Add(team2Node.transform.GetChild(i).gameObject);
             team2[i].GetComponent<WormMovement>().setTextColour(Color.yellow);
-        }
-            
+        }            
 
         currentTeam = Random.Range(1, 3);
         changeWorm(currentTeam);
@@ -118,6 +118,9 @@ public class GameController : MonoBehaviour {
             gameState = GameStates.GameOver;
             gameOverTxt.SetActive(true);
             gameOverFade.SetActive(true);
+
+            gameOverTxt.GetComponent<Animation>().Play();
+            gameOverFade.GetComponent<Animation>().Play();
 
             if(team1.Count > 0) {
                 foreach (GameObject w in team1)
