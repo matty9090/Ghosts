@@ -17,6 +17,8 @@ public class WormMovement : MonoBehaviour {
     private int RotationSpeed = 1;
     private int health = 100;
 
+    private float deathFloor = -5.0f;
+
     public Image healthBar;
     public string wormName;
     public Text wormNametxt;
@@ -129,7 +131,7 @@ public class WormMovement : MonoBehaviour {
             case WormState.Playing: statePlaying(); break;
             case WormState.Knockback: stateKnockback(); break;
         }
-
+        checkFallen();
         rb.velocity = velocity;
     }
 
@@ -137,6 +139,16 @@ public class WormMovement : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Ground")
             isGrounded = true;
+    }
+
+    void checkFallen()
+    {
+        if (transform.position.y <= deathFloor)
+        {
+            GameObject.Find("Game").GetComponent<GameController>().removeWorm(this.gameObject);
+            Destroy(this.gameObject);
+            GameObject.Find("Game").GetComponent<GameController>().Timer = 5.9f;
+        }
     }
 
     public bool takeDamage(int amount)
