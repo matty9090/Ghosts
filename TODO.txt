@@ -1,8 +1,6 @@
 TODO:
- - GUI
  - Animation for GUI
  - Arrow pointing to worm
  - Change spritesheets
- - Add more worms for each team
  - Add more weapons
  - Add background
