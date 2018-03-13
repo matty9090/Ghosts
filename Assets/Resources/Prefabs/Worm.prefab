@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553420976988050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.73, y: 1.68, z: 1}
+  m_LocalPosition: {x: 3.55, y: 4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4830464627860286}
@@ -213,7 +213,7 @@ MonoBehaviour:
   healthBar: {fileID: 114896823927001192}
   crosshair: {fileID: 1993715665119218}
   TestMissle: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
-  isTurn: 0
+  wormState: 0
 --- !u!114 &114896823927001192
 MonoBehaviour:
   m_ObjectHideFlags: 1
