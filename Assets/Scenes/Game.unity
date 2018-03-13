@@ -690,6 +690,8 @@ MonoBehaviour:
   weaponUI: {fileID: 695528657}
   timerText: {fileID: 1526938871}
   turnTime: 60
+  gameOverTxt: {fileID: 1524927800}
+  gameOverFade: {fileID: 1514424981}
 --- !u!4 &803025469
 Transform:
   m_ObjectHideFlags: 0
@@ -1280,8 +1282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154.6, y: -110.2}
-  m_SizeDelta: {x: 810.8, y: 378.9}
+  m_AnchoredPosition: {x: 5, y: -3.2}
+  m_SizeDelta: {x: 1109.9, y: 592.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514424983
 MonoBehaviour:
@@ -1289,7 +1291,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514424981}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1358,7 +1360,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524927800}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 

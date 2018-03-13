@@ -20,6 +20,12 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     float turnTime = 60.9f;
 
+    [SerializeField]
+    GameObject gameOverTxt;
+
+    [SerializeField]
+    GameObject gameOverFade;
+
     enum GameStates { Playing, GameOver }
     GameStates gameState;
 
@@ -51,7 +57,10 @@ public class GameController : MonoBehaviour {
 
         currentTeam = Random.Range(1, 3);
         changeWorm(currentTeam);
-	}
+
+        gameOverTxt.SetActive(false);
+        gameOverFade.SetActive(false);
+    }
 	
 	void Update () {
         switch(gameState) {
@@ -105,10 +114,18 @@ public class GameController : MonoBehaviour {
         else if (team2.Contains(worm))
             team2.Remove(worm);
 
-        if(team1.Count <= 0 || team2.Count <= 0) {
+        if (team1.Count <= 0 || team2.Count <= 0) {
             gameState = GameStates.GameOver;
-            GameObject.Find("txtGameOver").SetActive(true);
-            GameObject.Find("GameOverFade").SetActive(true);
+            gameOverTxt.SetActive(true);
+            gameOverFade.SetActive(true);
+
+            if(team1.Count > 0) {
+                foreach (GameObject w in team1)
+                    w.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
+            } else if (team2.Count > 0) {
+                foreach (GameObject w in team2)
+                    w.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
+            }
         }
     }
 
