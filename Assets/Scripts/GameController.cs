@@ -93,11 +93,26 @@ public class GameController : MonoBehaviour {
             team2.Remove(worm);
     }
 
+    public void hideUI() {
+        showUI = false;
+        weaponUI.SetActive(showUI);
+    }
+
     public float Timer {
         get {
             return timer;
-        } set {
+        }
+        set {
             timer = value;
+        }
+    }
+
+    public GameObject CurrentWorm {
+        get {
+            return currentWorm;
+        }
+        set {
+            currentWorm = value;
         }
     }
 }

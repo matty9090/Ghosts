@@ -21,7 +21,7 @@ public class WormMovement : MonoBehaviour {
     public string wormName;
     public Text wormNametxt;
     public GameObject crosshair;
-    public GameObject TestMissle;
+    public GameObject missile;
 
     public enum WormState { Idle, Playing, Knockback };
     public WormState wormState;
@@ -113,7 +113,7 @@ public class WormMovement : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.E)) {
                 Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y, 0.0f);
                 Vector2 fromPlayerToCross = crosshair.transform.position - transform.position;
-                var obj = (GameObject)Instantiate(TestMissle, tmp, Quaternion.LookRotation(fromPlayerToCross));
+                var obj = (GameObject)Instantiate(missile, tmp, Quaternion.LookRotation(fromPlayerToCross));
                 obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
 
                 GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;

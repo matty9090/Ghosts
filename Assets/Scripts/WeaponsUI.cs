@@ -20,7 +20,8 @@ public class WeaponsUI : MonoBehaviour {
             GameObject e = Instantiate(uiElement);
             e.transform.SetParent(listElement);
             e.transform.position = offset;
-            //e.transform.GetChild(2).GetComponent<Image>() = el.img;
+            e.transform.GetChild(2).GetComponent<Image>().sprite = el.img;
+            e.GetComponent<WeaponUIElement>().el = el;
 
             offset += new Vector3(122.0f, 0.0f, 0.0f);
         }

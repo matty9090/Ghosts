@@ -276,9 +276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 114896823927001192}
+  wormName: 
   wormNametxt: {fileID: 114138145848044240}
   crosshair: {fileID: 1993715665119218}
-  TestMissle: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
+  missile: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
   wormState: 0
 --- !u!114 &114896823927001192
 MonoBehaviour:
