@@ -320,11 +320,6 @@ Prefab:
       propertyPath: m_Name
       value: Worm (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114768494667845628, guid: 524c238a995dcbb4f831849673514e52,
-        type: 2}
-      propertyPath: wormName
-      value: Gregg
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524c238a995dcbb4f831849673514e52, type: 2}
   m_IsPrefabParent: 0
