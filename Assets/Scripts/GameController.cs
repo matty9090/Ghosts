@@ -32,11 +32,17 @@ public class GameController : MonoBehaviour {
         GameObject team1Node = GameObject.Find("Team1Worms");
         GameObject team2Node = GameObject.Find("Team2Worms");
 
-        for (int i = 0; i < team1Node.transform.childCount; i++)
+        for (int i = 0; i < team1Node.transform.childCount; i++) {
             team1.Add(team1Node.transform.GetChild(i).gameObject);
+            team1[i].GetComponent<WormMovement>().setTextColour(Color.cyan);
+        }
+           
 
-        for (int i = 0; i < team2Node.transform.childCount; i++)
+        for (int i = 0; i < team2Node.transform.childCount; i++){
             team2.Add(team2Node.transform.GetChild(i).gameObject);
+            team2[i].GetComponent<WormMovement>().setTextColour(Color.yellow);
+        }
+            
 
         currentTeam = Random.Range(1, 3);
         changeWorm(currentTeam);

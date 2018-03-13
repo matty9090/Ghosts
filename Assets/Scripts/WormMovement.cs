@@ -18,6 +18,8 @@ public class WormMovement : MonoBehaviour {
     private int health = 100;
 
     public Image healthBar;
+    public string wormName;
+    public Text wormNametxt;
     public GameObject crosshair;
     public GameObject TestMissle;
 
@@ -30,6 +32,7 @@ public class WormMovement : MonoBehaviour {
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
         wormState = WormState.Idle;
+        wormNametxt.text = wormName;
 	}
 	
     void stateIdle() {
@@ -146,6 +149,11 @@ public class WormMovement : MonoBehaviour {
             return true;
 
         return false;
+    }
+
+    public void setTextColour(Color color)
+    {
+        wormNametxt.color = color;
     }
 }
 
