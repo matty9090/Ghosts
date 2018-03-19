@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 430237274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13, y: 1.4480445, z: 1.1}
+  m_LocalPosition: {x: -18, y: 1.4480445, z: 1.1}
   m_LocalScale: {x: 0.62094986, y: 0.64665365, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
@@ -493,8 +493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XSpeed: 0.01
-  Xbegin: -13
-  Xend: 10
+  Xbegin: -17
+  Xend: 14
   Ymax: 0
   Ymin: 0
   YSpeed: 0
@@ -1249,7 +1249,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1398638624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12, y: 3.6147933, z: 1.1}
+  m_LocalPosition: {x: -18, y: 3.6147933, z: 1.1}
   m_LocalScale: {x: 0.89927185, y: 0.90484136, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
@@ -1311,8 +1311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XSpeed: 0.01
-  Xbegin: -12
-  Xend: 10
+  Xbegin: -17
+  Xend: 14
   Ymax: 0
   Ymin: 0
   YSpeed: 0
@@ -1384,7 +1384,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432528614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.930659, y: 2.9810731, z: 1.1}
+  m_LocalPosition: {x: -18, y: 2.9810731, z: 1.1}
   m_LocalScale: {x: 0.62094986, y: 0.64665365, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
@@ -1402,8 +1402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XSpeed: 0.02
-  Xbegin: -10
-  Xend: 10
+  Xbegin: -17
+  Xend: 14
   Ymax: 0
   Ymin: 0
   YSpeed: 0
@@ -2034,11 +2034,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe8f182cd6efc94f8f75424f7cec445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainWidth: 513
-  sceneWidth: 15
-  height: 2.22
+  terrainWidth: 1025
+  sceneWidth: 30
+  height: 1.8
   roughness: 0.44
-  x_offset: -7
+  x_offset: -14
   y_offset: -0.55
   voxel_size: 0.1
   voxel: {fileID: 1735536844790624, guid: d3ec33b11c130a7408ccf691167b677f, type: 2}
