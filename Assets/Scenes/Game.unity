@@ -520,12 +520,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 672860029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 2.28, z: 0}
-  m_LocalScale: {x: 0.58081824, y: 0.5627582, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5191141, y: 1.8946949, z: 0}
+  m_LocalScale: {x: 0.721318, y: 0.7278192, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1550165655}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695528657
 GameObject:
@@ -610,11 +610,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715573600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.114, y: -0.054, z: 1}
+  m_LocalPosition: {x: 0.114, y: -0.054, z: 1.2}
   m_LocalScale: {x: 0.9872964, y: 0.9767873, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &715573602
 SpriteRenderer:
@@ -1158,7 +1158,7 @@ Transform:
   m_LocalScale: {x: 0.9909862, y: 0.99500436, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1356214151
 SpriteRenderer:
@@ -1231,7 +1231,7 @@ Transform:
   m_LocalScale: {x: 0.89927185, y: 0.90484136, z: 1}
   m_Children: []
   m_Father: {fileID: 1550165655}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1398638626
 SpriteRenderer:
@@ -1684,6 +1684,7 @@ Transform:
   m_LocalPosition: {x: 0.412, y: 0.815, z: 0}
   m_LocalScale: {x: 0.805218, y: 0.7732115, z: 1}
   m_Children:
+  - {fileID: 672860031}
   - {fileID: 1398638625}
   - {fileID: 1356214150}
   - {fileID: 715573601}
@@ -1902,11 +1903,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe8f182cd6efc94f8f75424f7cec445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainWidth: 513
-  sceneWidth: 15
-  height: 2.22
+  terrainWidth: 1025
+  sceneWidth: 30
+  height: 2
   roughness: 0.44
-  x_offset: -7
+  x_offset: -14
   y_offset: -0.55
   voxel_size: 0.1
   voxel: {fileID: 1735536844790624, guid: d3ec33b11c130a7408ccf691167b677f, type: 2}
