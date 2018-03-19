@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour {
         }            
 
         currentTeam = Random.Range(1, 3);
-        changeWorm(currentTeam);
+        changeWorm();
 
         gameOverTxt.GetComponent<Text>().enabled = false;
         gameOverFade.GetComponent<Image>().enabled = false;
@@ -70,8 +70,7 @@ public class GameController : MonoBehaviour {
 
                 if (timer < 0.0f) {
                     timer = turnTime;
-                    currentTeam = (currentTeam % 2) + 1;
-                    changeWorm(currentTeam);
+                    changeWorm();
                 }
 
                 if (Input.GetKeyUp(KeyCode.U)) {
@@ -87,11 +86,14 @@ public class GameController : MonoBehaviour {
         }
 	}
 
-    void changeWorm(int team) {
+    public void changeWorm() {
+        currentTeam = (currentTeam % 2) + 1;
+        timer = 60.9f;
+
         if (currentWorm)
             currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
 
-        if (team == 1)
+        if (currentTeam == 1)
             currentWorm = team1[Random.Range(0, team1.Count)];
         else
             currentWorm = team2[Random.Range(0, team2.Count)];

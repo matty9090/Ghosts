@@ -147,8 +147,8 @@ public class WormMovement : MonoBehaviour {
         if (transform.position.y <= deathFloor)
         {
             GameObject.Find("Game").GetComponent<GameController>().removeWorm(this.gameObject);
+            GameObject.Find("Game").GetComponent<GameController>().changeWorm();
             Destroy(this.gameObject);
-            GameObject.Find("Game").GetComponent<GameController>().Timer = 5.9f;
         }
     }
 

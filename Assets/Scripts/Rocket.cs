@@ -50,6 +50,7 @@ public class Rocket : MonoBehaviour {
                     } else {
                         worms.RemoveAt(i);
                         GameObject.Find("Game").GetComponent<GameController>().removeWorm(worm);
+                        GameObject.Find("Game").GetComponent<GameController>().changeWorm();
                         Destroy(worm);
                     }
                 }
