@@ -159,7 +159,7 @@ public class WormMovement : MonoBehaviour {
         healthBar.fillAmount = (float)health / 100.0f;
         DamageNumberController.CreateFloatingText(amount.ToString(), transform);
 
-        ani.SetInteger("State", 0);
+        ani.SetInteger("State", 3);
 
         if (health < 0)
             return true;

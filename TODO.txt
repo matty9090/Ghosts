@@ -1,6 +1,4 @@
 TODO:
  - Animation for GUI
- - Arrow pointing to worm
  - Change spritesheets
  - Add more weapons
- - Add background
