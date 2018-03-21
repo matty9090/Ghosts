@@ -8,6 +8,7 @@ public class WormMovement : MonoBehaviour {
     private SpriteRenderer sr;
     private Animator ani;
     private Vector2 velocity = Vector2.zero;
+    private GameController gameController;
 
     private int facing = -1;
     private bool isGrounded = true;
@@ -35,6 +36,7 @@ public class WormMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
+        gameController = GameObject.Find("Game").GetComponent<GameController>();
         wormState = WormState.Idle;
         wormNametxt.text = wormName;
         knockTimer = knockbackTimer;
@@ -72,63 +74,65 @@ public class WormMovement : MonoBehaviour {
         } else
             velocity = new Vector2(rb.velocity.x, rb.velocity.y);
 
-        if (Input.GetKey(KeyCode.Space)) {
+        if (gameController.gameState == GameController.GameStates.Playing) {
+            if (Input.GetKey(KeyCode.Space)) {
+                if (isGrounded) {
+                    isGrounded = false;
+                    velocity.x = 1f * facing;
+                    velocity.y = 5f;
+                    ani.SetInteger("State", 2);
+                }
+            }
+
             if (isGrounded) {
-                isGrounded = false;
-                velocity.x = 1f * facing;
-                velocity.y = 5f;
-                ani.SetInteger("State", 2);
-            }
-        }
+                if (Input.GetKey(KeyCode.A)) {
+                    if (sr.flipX) {
+                        sr.flipX = false;
+                        crosshair.transform.RotateAround(transform.position, Vector3.forward, 180 - 2 * (currentRotation));
+                    }
 
-        if (isGrounded) {
-            if (Input.GetKey(KeyCode.A)) {
-                if (sr.flipX) {
-                    sr.flipX = false;
-                    crosshair.transform.RotateAround(transform.position, Vector3.forward, 180 - 2 * (currentRotation));
-                }
-
-                velocity.x = -1;
-                facing = -1;
-                ani.SetInteger("State", 1);
-            } else if (Input.GetKey(KeyCode.D)) {
-                if (!sr.flipX) {
-                    sr.flipX = true;
-                    crosshair.transform.RotateAround(transform.position, Vector3.back, 180 - 2 * (currentRotation));
-                }
-
-                velocity.x = 1;
-                facing = 1;
-                ani.SetInteger("State", 1);
-            } else if (Input.GetKey(KeyCode.W)) {
-                if (currentRotation < maxRotation) {
+                    velocity.x = -1;
+                    facing = -1;
+                    ani.SetInteger("State", 1);
+                } else if (Input.GetKey(KeyCode.D)) {
                     if (!sr.flipX) {
-                        currentRotation += RotationSpeed;
-                        crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
-                    } else {
-                        currentRotation += RotationSpeed;
-                        crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
+                        sr.flipX = true;
+                        crosshair.transform.RotateAround(transform.position, Vector3.back, 180 - 2 * (currentRotation));
+                    }
+
+                    velocity.x = 1;
+                    facing = 1;
+                    ani.SetInteger("State", 1);
+                } else if (Input.GetKey(KeyCode.W)) {
+                    if (currentRotation < maxRotation) {
+                        if (!sr.flipX) {
+                            currentRotation += RotationSpeed;
+                            crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
+                        } else {
+                            currentRotation += RotationSpeed;
+                            crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
+                        }
+                    }
+                } else if (Input.GetKey(KeyCode.S)) {
+                    if (currentRotation > minRotation) {
+                        if (!sr.flipX) {
+                            currentRotation -= RotationSpeed;
+                            crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
+                        } else {
+                            currentRotation -= RotationSpeed;
+                            crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
+                        }
                     }
                 }
-            } else if (Input.GetKey(KeyCode.S)) {
-                if (currentRotation > minRotation) {
-                    if (!sr.flipX) {
-                        currentRotation -= RotationSpeed;
-                        crosshair.transform.RotateAround(transform.position, Vector3.forward, RotationSpeed);
-                    } else {
-                        currentRotation -= RotationSpeed;
-                        crosshair.transform.RotateAround(transform.position, Vector3.back, RotationSpeed);
-                    }
+
+                if (Input.GetKeyDown(KeyCode.E)) {
+                    Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y, 0.0f);
+                    Vector2 fromPlayerToCross = crosshair.transform.position - transform.position;
+                    var obj = (GameObject)Instantiate(missile, tmp, Quaternion.LookRotation(fromPlayerToCross));
+                    obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
+
+                    GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
                 }
-            }
-
-            if (Input.GetKeyDown(KeyCode.E)) {
-                Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y, 0.0f);
-                Vector2 fromPlayerToCross = crosshair.transform.position - transform.position;
-                var obj = (GameObject)Instantiate(missile, tmp, Quaternion.LookRotation(fromPlayerToCross));
-                obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
-
-                GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
             }
         }
     }
@@ -141,6 +145,7 @@ public class WormMovement : MonoBehaviour {
             case WormState.Playing: statePlaying(); break;
             case WormState.Knockback: stateKnockback(); break;
         }
+
         checkFallen();
         rb.velocity = velocity;
     }

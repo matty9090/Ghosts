@@ -325,6 +325,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1769338385156714, guid: c563b03189bccf14cbeae28ccf3bc5e2,
         type: 2}
+    - target: {fileID: 114768494667845628, guid: 524c238a995dcbb4f831849673514e52,
+        type: 2}
+      propertyPath: wormName
+      value: Ollie
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524c238a995dcbb4f831849673514e52, type: 2}
   m_IsPrefabParent: 0
@@ -795,11 +800,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586e96e889bbe5c48aedddfb7ae364bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 803209411}
   weaponUI: {fileID: 695528657}
   timerText: {fileID: 1526938871}
   turnTime: 60
   gameOverTxt: {fileID: 1524927800}
   gameOverFade: {fileID: 1514424981}
+  gameState: 0
 --- !u!4 &803025469
 Transform:
   m_ObjectHideFlags: 0
@@ -910,6 +917,7 @@ MonoBehaviour:
   controller: {fileID: 803025468}
   sceneStart: -6.52
   sceneEnd: 7
+  panned: 0
 --- !u!1 &966467984
 GameObject:
   m_ObjectHideFlags: 0

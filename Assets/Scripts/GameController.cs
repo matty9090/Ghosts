@@ -8,6 +8,9 @@ public class GameController : MonoBehaviour {
     private List<GameObject> team1, team2;
 
     [SerializeField]
+    private PositionCamera cam;
+
+    [SerializeField]
     private GameObject weaponUI;
 
     [SerializeField]
@@ -26,8 +29,8 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     GameObject gameOverFade;
 
-    enum GameStates { Playing, GameOver }
-    GameStates gameState;
+    public enum GameStates { Playing, Panning, GameOver }
+    public GameStates gameState;
 
 	void Start () {
         DamageNumberController.initialize();
@@ -80,6 +83,14 @@ public class GameController : MonoBehaviour {
 
                 break;
 
+            case GameStates.Panning:
+                if (cam.panned) {
+                    cam.panned = false;
+                    gameState = GameStates.Playing;
+                }
+
+                break;
+
             case GameStates.GameOver:
 
                 break;
@@ -99,6 +110,8 @@ public class GameController : MonoBehaviour {
             currentWorm = team2[Random.Range(0, team2.Count)];
 
         currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Playing;
+        gameState = GameStates.Panning;
+        cam.pan();
     }
 
     public List<GameObject> getAllWorms() {
@@ -111,6 +124,9 @@ public class GameController : MonoBehaviour {
     }
 
     public void removeWorm(GameObject worm) {
+        if(currentWorm == worm)
+            changeWorm();
+
         if (team1.Contains(worm))
             team1.Remove(worm);
         else if (team2.Contains(worm))
