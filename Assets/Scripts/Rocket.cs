@@ -33,6 +33,7 @@ public class Rocket : MonoBehaviour {
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
 
             List<GameObject> worms = GameObject.Find("Game").GetComponent<GameController>().getAllWorms();
+            bool killedWorm = false;
 
             for(int i = worms.Count - 1; i >= 0; i--) {
                 GameObject worm = worms[i];
@@ -50,11 +51,15 @@ public class Rocket : MonoBehaviour {
                     } else {
                         worms.RemoveAt(i);
                         GameObject.Find("Game").GetComponent<GameController>().removeWorm(worm);
-                        GameObject.Find("Game").GetComponent<GameController>().changeWorm();
                         Destroy(worm);
+
+                        killedWorm = true;
                     }
                 }
             }
+
+            if(killedWorm)
+                GameObject.Find("Game").GetComponent<GameController>().changeWorm();
 
             Destroy(expl, 0.5f);
 
