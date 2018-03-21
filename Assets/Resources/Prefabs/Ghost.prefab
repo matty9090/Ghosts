@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f4714bc0c457c4e881a06431bccb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackTimer: 2
   healthBar: {fileID: 114059742388027952}
   wormName: Jeff
   wormNametxt: {fileID: 114138145848044240}

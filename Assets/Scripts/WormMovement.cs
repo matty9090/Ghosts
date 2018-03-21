@@ -17,8 +17,10 @@ public class WormMovement : MonoBehaviour {
     private int RotationSpeed = 1;
     private int health = 100;
 
+    private float knockTimer = 0.0f;
     private float deathFloor = -5.0f;
 
+    public float knockbackTimer = 2.0f;
     public Image healthBar;
     public string wormName;
     public Text wormNametxt;
@@ -35,10 +37,12 @@ public class WormMovement : MonoBehaviour {
         ani = GetComponent<Animator>();
         wormState = WormState.Idle;
         wormNametxt.text = wormName;
+        knockTimer = knockbackTimer;
     }
 	
     void stateIdle() {
         crosshair.GetComponent<SpriteRenderer>().enabled = false;
+
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);
             ani.SetInteger("State", 0);
@@ -48,8 +52,13 @@ public class WormMovement : MonoBehaviour {
 
     void stateKnockback() {
         crosshair.GetComponent<SpriteRenderer>().enabled = false;
-        // if (isGrounded)
-        //    wormState = WormState.Idle;
+
+        knockTimer -= Time.deltaTime;
+
+        if (knockTimer <= 0) {
+            wormState = WormState.Idle;
+            knockTimer = knockbackTimer;
+        }
 
         velocity = new Vector2(rb.velocity.x, rb.velocity.y);
     }
