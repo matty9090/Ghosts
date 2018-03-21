@@ -10,10 +10,7 @@ public class DamageNumberController : MonoBehaviour {
         canvas = GameObject.Find("UI");
 
         if(!popupText)
-        {
-            Debug.Log("HIIIIIIIIIIIII");
             popupText = Resources.Load<DamageNumbers>("Prefabs/PopupTextParent");
-        }
     }
 
 	public static void CreateFloatingText(string text, Transform location) {
