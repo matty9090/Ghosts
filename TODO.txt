@@ -1,4 +1,6 @@
 TODO:
+ - Change terrain generation
+ - Add extra stuff in background
+ - Camera look around
  - Animation for GUI
- - Change spritesheets
  - Add more weapons
