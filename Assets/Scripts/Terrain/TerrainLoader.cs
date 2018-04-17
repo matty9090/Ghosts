@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class TerrainLoader : MonoBehaviour {
     [SerializeField]
-    int terrainWidth = 513; // 2^n + 1
-
-    [SerializeField]
     int sceneWidth = 20;
 
     [SerializeField]
@@ -25,39 +22,19 @@ public class TerrainLoader : MonoBehaviour {
     float voxel_size = 0.1f;
 
     [SerializeField]
-    GameObject voxel;
+    GameObject voxel; 
 
-    Dictionary<string, GameObject> voxels;
-    Vector3[] terrain;
-    EdgeCollider2D terrainCollider;
-    LineRenderer lineRenderer;
+    private Dictionary<string, GameObject> voxels;
 
     float ratio;
+    int terrainWidth;
 
     void Start() {
-        ratio = (float)sceneWidth / (float)terrainWidth;
-        terrainCollider = GetComponent<EdgeCollider2D>();
-        lineRenderer = GetComponent<LineRenderer>();
-        voxels = new Dictionary<string, GameObject>();
+        terrainWidth = (int)((float)sceneWidth / voxel_size);
+        ratio        = (float)sceneWidth / (float)terrainWidth;
 
-        MidPointDisplacement t = new MidPointDisplacement(terrainWidth, sceneWidth, height, roughness, x_offset, y_offset);
-        terrain = t.terrainData;
-
-        lineRenderer.positionCount = terrain.Length;
-        lineRenderer.SetPositions(terrain);
-
-        terrainCollider.points = t.terrainData2D;
-
-        rasterize(t.terrainData);
-    }
-
-    void rasterize(Vector3[] data) {
-        for (int i = 0; i < data.Length; i++) {
-            for (float y = data[i].y - 0.12f; y > -3.3f; y -= voxel_size) {
-                string index = i + "," + (int)(y / ratio);
-                voxels[index] = Instantiate(voxel, new Vector3(data[i].x, y, -1.0f), Quaternion.Euler(0, 0, 0));
-            }
-        }
+        TerrainPerlin gen = new TerrainPerlin(voxel, voxel_size, x_offset, y_offset, sceneWidth, ratio);
+        voxels = gen.Terrain;
     }
 
     public void removeVoxelsInRadius(Vector2 worldPos, float radius) {
@@ -76,7 +53,7 @@ public class TerrainLoader : MonoBehaviour {
         for (int x = sx; x <= ex; x++) {
             for (int y = sy; y <= ey; y++) {
                 string index = x + "," + y;
-
+                
                 if (voxels.ContainsKey(index)) {
                     GameObject v = voxels[index];
 
@@ -93,7 +70,5 @@ public class TerrainLoader : MonoBehaviour {
                 }
             }
         }
-
-        lineRenderer.SetPositions(terrain);
     }
 }
