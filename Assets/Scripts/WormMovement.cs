@@ -168,7 +168,6 @@ public class WormMovement : MonoBehaviour {
 
     public bool takeDamage(int amount)
     {
-       
         health -= amount;
         healthBar.fillAmount = (float)health / 100.0f;
         DamageNumberController.CreateFloatingText(amount.ToString(), transform);
