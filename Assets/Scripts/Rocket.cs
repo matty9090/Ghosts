@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rocket : MonoBehaviour {
+public class Rocket : MonoBehaviour, Crosshair {
     [SerializeField]
     float explosionRadius;
 
@@ -15,6 +16,9 @@ public class Rocket : MonoBehaviour {
     bool collided;
     Vector3 vel;
 
+    private int maxRotation = 89;
+    private int minRotation = -89;
+    private int RotationSpeed = 1;
 
     private void Start() {
         collided = false;
@@ -59,6 +63,51 @@ public class Rocket : MonoBehaviour {
 
             collided = true;
             Destroy(gameObject);
+        }
+    }
+
+    public bool canMove() {
+        return true;
+    }
+
+    public void control(GameObject crosshair, float speed, SpriteRenderer sr, ref int rotation, Vector3 pos) {
+        if (Input.GetKey(KeyCode.A)) {
+            if (sr.flipX)
+                crosshair.transform.RotateAround(pos, Vector3.forward, 180 - 2 * (rotation));
+
+        } else if (Input.GetKey(KeyCode.D)) {
+            if (!sr.flipX)
+                crosshair.transform.RotateAround(pos, Vector3.back, 180 - 2 * (rotation));
+            
+        } else if (Input.GetKey(KeyCode.W)) {
+            if (rotation < maxRotation) {
+                if (!sr.flipX) {
+                    rotation += RotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.back, RotationSpeed);
+                } else {
+                    rotation += RotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.forward, RotationSpeed);
+                }
+            }
+        } else if (Input.GetKey(KeyCode.S)) {
+            if (rotation > minRotation) {
+                if (!sr.flipX) {
+                    rotation -= RotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.forward, RotationSpeed);
+                } else {
+                    rotation -= RotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.back, RotationSpeed);
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y, 0.0f);
+            Vector2 fromPlayerToCross = crosshair.transform.position - pos;
+            var obj = (GameObject)Instantiate(gameObject, tmp, Quaternion.LookRotation(fromPlayerToCross));
+            obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
+
+            GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
         }
     }
 }

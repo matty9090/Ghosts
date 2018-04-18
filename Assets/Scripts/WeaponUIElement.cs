@@ -21,8 +21,6 @@ public class WeaponUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public WeaponUIEl el;
 
     public void OnPointerDown(PointerEventData eventData) {
-        GameObject.Find("Game").GetComponent<GameController>().CurrentWorm.GetComponent<WormMovement>().missile = el.prefab;
-
         transform.GetChild(2).position += new Vector3(0.0f, -3.0f, 0.0f);
     }
 
@@ -36,6 +34,9 @@ public class WeaponUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerUp(PointerEventData eventData) {
         GameObject.Find("Game").GetComponent<GameController>().hideUI();
+        GameObject.Find("Game").GetComponent<GameController>().CurrentWorm.GetComponent<WormMovement>().missile = el.prefab;
+        GameObject.Find("Game").GetComponent<GameController>().CurrentWorm.GetComponent<WormMovement>().SwapToCrosshair();
+
         transform.GetChild(2).position += new Vector3(0.0f, 3.0f, 0.0f);
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -695,12 +695,12 @@ MonoBehaviour:
   uiElement: {fileID: 1782868268209116, guid: 6e155cd4230205d42b967bd51b19e825, type: 2}
   listElement: {fileID: 401415850}
   weapons:
-  - prefab: {fileID: 1082034073777032, guid: 033c1dae44d591a478287f0d256bc4de, type: 2}
+  - prefab: {fileID: 1769338385156714, guid: c563b03189bccf14cbeae28ccf3bc5e2, type: 2}
     img: {fileID: 21300002, guid: e2572b29337db9e46b54154ce3eafaf0, type: 3}
-    str: Small Rocket
-  - prefab: {fileID: 1385964809073576, guid: 9c167a537d59aca458991984cb3df775, type: 2}
+    str: Magic Missile
+  - prefab: {fileID: 1543094832089064, guid: 33418741a16ba5f4694dbc0b53dd2fe5, type: 2}
     img: {fileID: 21300066, guid: e2572b29337db9e46b54154ce3eafaf0, type: 3}
-    str: Large Rocket
+    str: Meteorite
 --- !u!1 &715573600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,13 +2181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe8f182cd6efc94f8f75424f7cec445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainWidth: 1025
   sceneWidth: 30
   height: 1.8
   roughness: 0.44
   x_offset: -14
   y_offset: -0.55
-  voxel_size: 0.1
+  voxel_size: 0.06
   voxel: {fileID: 1735536844790624, guid: d3ec33b11c130a7408ccf691167b677f, type: 2}
 --- !u!4 &1933332070 stripped
 Transform:
