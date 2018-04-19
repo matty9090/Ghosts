@@ -25,5 +25,7 @@ public class WeaponsUI : MonoBehaviour {
 
             offset += new Vector3(122.0f, 0.0f, 0.0f);
         }
-	}
+
+        GameObject.Find("SelectedWeapon").transform.GetChild(2).GetComponent<Image>().sprite = weapons[0].img;
+    }
 }
