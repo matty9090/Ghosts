@@ -17,7 +17,7 @@ public class WormMovement : MonoBehaviour {
     private int health = 100;
 
     private float knockTimer = 0.0f;
-    private float deathFloor = -5.0f;
+    private float deathFloor = -5.5f;
 
     private bool weaponType = false;
 
