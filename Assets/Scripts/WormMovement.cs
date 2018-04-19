@@ -18,6 +18,7 @@ public class WormMovement : MonoBehaviour {
 
     private float knockTimer = 0.0f;
     private float deathFloor = -5.74f;
+    private float ceiling    = 3.9f;
 
     public float knockbackTimer = 2.0f;
     public Image healthBar;
@@ -117,6 +118,7 @@ public class WormMovement : MonoBehaviour {
         }
 
         checkFallen();
+        checkCeiling();
         rb.velocity = velocity;
     }
 
@@ -124,6 +126,12 @@ public class WormMovement : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
             isGrounded = true;
+    }
+
+    void checkCeiling()
+    {
+        if (transform.position.y >= ceiling)
+            transform.position = new Vector3(transform.position.x, ceiling, transform.position.z);
     }
 
     void checkFallen()
