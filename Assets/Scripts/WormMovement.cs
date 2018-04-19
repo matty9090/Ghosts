@@ -17,7 +17,7 @@ public class WormMovement : MonoBehaviour {
     private int health = 100;
 
     private float knockTimer = 0.0f;
-    private float deathFloor = -5.5f;
+    private float deathFloor = -5.74f;
 
     private bool weaponType = false;
 
@@ -133,7 +133,6 @@ public class WormMovement : MonoBehaviour {
         if (transform.position.y <= deathFloor)
         {
             GameObject.Find("Game").GetComponent<GameController>().removeWorm(this.gameObject);
-            GameObject.Find("Game").GetComponent<GameController>().changeWorm();
             Destroy(this.gameObject);
         }
     }
