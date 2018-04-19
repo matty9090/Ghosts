@@ -1,2 +1,4 @@
-# Worms2.0
-Better than Worms 1
+# Ghosts
+Better than Worms
+
+UCLan Project ft @matty9090 + @nathan399
