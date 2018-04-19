@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Meteor : MonoBehaviour {
+public class Meteor : MonoBehaviour, Crosshair {
     [SerializeField]
     float explosionRadius;
 
@@ -22,30 +22,25 @@ public class Meteor : MonoBehaviour {
     Vector3 vel;
 
 
-    private void Start()
-    {
+    private void Start() {
         collided = false;
         GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.5f);
     }
 
-    private void Update()
-    {
+    private void Update() {
         vel = GetComponent<Rigidbody2D>().velocity;
         transform.rotation = Quaternion.LookRotation(-vel);
-        transform.Rotate(new Vector3(90,0,0));
+        transform.Rotate(new Vector3(90, 0, 0));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player"))
-        {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player")) {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
 
             List<GameObject> worms = GameObject.Find("Game").GetComponent<GameController>().getAllWorms();
 
-            for (int i = worms.Count - 1; i >= 0; i--)
-            {
+            for (int i = worms.Count - 1; i >= 0; i--) {
                 GameObject worm = worms[i];
 
                 float dx = worm.transform.position.x - collision.collider.transform.position.x;
@@ -54,21 +49,18 @@ public class Meteor : MonoBehaviour {
                 Vector2 dir = (new Vector2(dx, dy)).normalized;
                 Vector2 force = new Vector2((explosionRadius - Mathf.Abs(dx)) * dir.x * 300.0f, (explosionRadius - Mathf.Abs(dy)) * dir.y * 300.0f);
 
-                if (dx * dx + dy * dy < explosionRadius * explosionRadius)
-                {
-                    if (!worm.GetComponent<WormMovement>().takeDamage(rocketDamage))
-                    {
+                if (dx * dx + dy * dy < explosionRadius * explosionRadius) {
+                    if (!worm.GetComponent<WormMovement>().takeDamage(rocketDamage)) {
                         worm.GetComponent<Rigidbody2D>().AddForce(force);
                         worm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Knockback;
-                    }
-                    else
-                    {
+                    } else {
                         worms.RemoveAt(i);
                         GameObject.Find("Game").GetComponent<GameController>().removeWorm(worm);
                         Destroy(worm);
                     }
                 }
             }
+
             createMeteorites();
             Destroy(expl, 0.5f);
 
@@ -77,16 +69,38 @@ public class Meteor : MonoBehaviour {
         }
     }
 
-    void createMeteorites()
-    {
-
-        for(int counter = 0; counter < meteoriteCount; counter++)
-        {
+    void createMeteorites() {
+        for (int counter = 0; counter < meteoriteCount; counter++) {
             float xdir = Random.Range(-3.0f, 3.0f);
             float ydir = Random.Range(3.0f, 6.0f);
             Vector3 Direction = new Vector3(xdir, ydir, 0.0f);
             var obj = (GameObject)Instantiate(meteorite, this.transform.position, Quaternion.LookRotation(Direction));
-            obj.GetComponent<Rigidbody2D>().velocity = Direction ;
+            obj.GetComponent<Rigidbody2D>().velocity = Direction;
+        }
+    }
+
+    public bool canMove() {
+        return false;
+    }
+
+    public void control(GameObject crosshair, float speed, SpriteRenderer sr, ref int rotation, Vector3 pos) {
+        if (Input.GetKey(KeyCode.A)) {
+            crosshair.transform.Translate(new Vector3(-speed, 0.0f, 0.0f));
+        } else if (Input.GetKey(KeyCode.D)) {
+            crosshair.transform.Translate(new Vector3(speed, 0.0f, 0.0f));
+        }
+        if (Input.GetKey(KeyCode.W)) {
+            crosshair.transform.Translate(new Vector3(0.0f, speed, 0.0f));
+        } else if (Input.GetKey(KeyCode.S)) {
+            crosshair.transform.Translate(new Vector3(0.0f, -speed, 0.0f));
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y + 10.0f, 0.0f);
+            Vector2 crosshairPosition = crosshair.transform.position - tmp;
+            GameObject obj = Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+
+            GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
         }
     }
 }
