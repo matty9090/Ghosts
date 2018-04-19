@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 50081772956283092}
   - component: {fileID: 58406608016870836}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: MagicMissile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
