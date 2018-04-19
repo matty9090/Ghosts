@@ -55,7 +55,7 @@ public class WormMovement : MonoBehaviour {
         crosshair.GetComponent<SpriteRenderer>().enabled = false;
 
         knockTimer -= Time.deltaTime;
-
+        
         if (knockTimer <= 0) {
             wormState = WormState.Idle;
             knockTimer = knockbackTimer;

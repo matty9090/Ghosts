@@ -8,9 +8,12 @@ public class TerrainPerlin {
     public TerrainPerlin(GameObject voxel, float voxel_size, float x_offset, float y_offset, float scene_width, float ratio) {
         voxels = new Dictionary<string, GameObject>();
 
+        float rx = Random.Range(-1000.0f, 1000.0f);
+        float ry = Random.Range(-1000.0f, 1000.0f);
+
         for (float y = 5; y > -5.0f; y -= voxel_size) {
             for (float x = 0; x < scene_width; x += voxel_size) {
-                if (Perlin.Noise(x / 2.0f, y / 2.5f) > 0.08f) {
+                if (Perlin.Noise((x + rx) / 2.5f, (y + ry) / 2.0f) > 0.06f) {
                     GameObject v = GameObject.Instantiate(voxel);
                     v.transform.position = new Vector3(x + x_offset, y + y_offset, 0.0f);
 

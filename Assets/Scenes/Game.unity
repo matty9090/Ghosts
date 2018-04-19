@@ -445,17 +445,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114768494667845628, guid: 524c238a995dcbb4f831849673514e52,
-        type: 2}
-      propertyPath: wormName
-      value: Nathan
-      objectReference: {fileID: 0}
-    - target: {fileID: 114768494667845628, guid: 524c238a995dcbb4f831849673514e52,
-        type: 2}
-      propertyPath: missile
-      value: 
-      objectReference: {fileID: 1769338385156714, guid: c563b03189bccf14cbeae28ccf3bc5e2,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524c238a995dcbb4f831849673514e52, type: 2}
   m_IsPrefabParent: 0
@@ -2182,8 +2171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneWidth: 30
-  height: 1.8
-  roughness: 0.44
   x_offset: -14
   y_offset: -0.55
   voxel_size: 0.07
