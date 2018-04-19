@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -722,6 +722,9 @@ MonoBehaviour:
   - prefab: {fileID: 1403894187366776, guid: 2fe839849593e544d984d2d00c01c7bb, type: 2}
     img: {fileID: 21300000, guid: e28aafc21aec9f345ad7fa7cac70e9f7, type: 3}
     str: Digger
+  - prefab: {fileID: 1009458172771618, guid: 7625ed99c0e6468458b53ac0d3733e6e, type: 2}
+    img: {fileID: 21300000, guid: 58adbaaf9c6311c49a43dc2afc842629, type: 3}
+    str: The Bouncer
 --- !u!1 &715573600
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +994,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 803209406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: -0.5, z: -20}
+  m_LocalPosition: {x: 0.49, y: -0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1550165655}
