@@ -41,7 +41,7 @@ public class DiggerBomb : MonoBehaviour, Crosshair
         transform.rotation = Quaternion.LookRotation(-vel);
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, transform.rotation.z));
 
-        if (timerStart == true)
+        if (timerStart)
         {
             timer -= Time.deltaTime;
         }
@@ -57,7 +57,6 @@ public class DiggerBomb : MonoBehaviour, Crosshair
 
         if (!collided && ( collision.gameObject.tag == "Player" || timer <= 0))
         {
-            Debug.Log(" jsadas " + timer);
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
 
