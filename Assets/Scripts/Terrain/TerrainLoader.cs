@@ -7,12 +7,6 @@ public class TerrainLoader : MonoBehaviour {
     int sceneWidth = 20;
 
     [SerializeField]
-    float height = 1.0f;
-
-    [SerializeField]
-    float roughness = 0.5f;
-
-    [SerializeField]
     float x_offset = -7.0f;
 
     [SerializeField]
