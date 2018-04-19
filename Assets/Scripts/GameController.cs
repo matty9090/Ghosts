@@ -14,11 +14,14 @@ public class GameController : MonoBehaviour {
     private GameObject weaponUI;
 
     [SerializeField]
+    private GameObject selectedWeapon;
+
+    [SerializeField]
     private Text timerText;
 
     private int currentTeam;
     private float timer;
-    private bool showUI;
+    private bool showWeaponUI;
 
     [SerializeField]
     float turnTime = 60.9f;
@@ -37,7 +40,6 @@ public class GameController : MonoBehaviour {
 
         gameState = GameStates.Playing;
 
-        showUI = false;
         hideUI();
 
         timer = turnTime;
@@ -77,8 +79,10 @@ public class GameController : MonoBehaviour {
                 }
 
                 if (Input.GetKeyUp(KeyCode.U)) {
-                    showUI = !showUI;
-                    weaponUI.SetActive(showUI);
+                    if (showWeaponUI)
+                        hideUI();
+                    else
+                        showUI();
                 }
 
                 break;
@@ -150,9 +154,16 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    public void showUI() {
+        showWeaponUI = true;
+        weaponUI.SetActive(true);
+        selectedWeapon.SetActive(false);
+    }
+
     public void hideUI() {
-        showUI = false;
-        weaponUI.SetActive(showUI);
+        showWeaponUI = false;
+        weaponUI.SetActive(false);
+        selectedWeapon.SetActive(true);
     }
 
     public float Timer {
