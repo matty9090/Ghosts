@@ -38,10 +38,13 @@ public class Bouncer : MonoBehaviour, Crosshair {
         vel = GetComponent<Rigidbody2D>().velocity;
         vel.Normalize();
         vel *= 5;
+
+        if (vel.x == 0 && vel.y == 0)
+            vel = new Vector2(0.1f, 0.1f);
+
         GetComponent<Rigidbody2D>().velocity = vel;
         transform.rotation = Quaternion.LookRotation(-vel);
-        transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, transform.rotation.z + 0.01f));
-
+        transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, transform.rotation.z));
         hitTimer -= Time.deltaTime;
         
     }
