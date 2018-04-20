@@ -86,7 +86,7 @@ public class WormMovement : MonoBehaviour {
             if (isGrounded)
                 missile.GetComponent<Crosshair>().control(crosshair, crosshairMoveSpeed, sr, ref currentRotation, transform.position);
 
-            if (missile.GetComponent<Crosshair>().canMove()) {
+            if (missile.GetComponent<Crosshair>().canMove() && isGrounded) {
                 if (Input.GetKey(KeyCode.A)) {
                     if (sr.flipX) {
                         sr.flipX = false;
@@ -169,6 +169,7 @@ public class WormMovement : MonoBehaviour {
         else
             crosshair.transform.position = new Vector3(-0.704f, 0.0f, 0.0f) + transform.position;
 
+        crosshair.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f));
         currentRotation = 0;
     } 
 }

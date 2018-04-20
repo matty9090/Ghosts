@@ -52,7 +52,6 @@ public class Bouncer : MonoBehaviour, Crosshair {
         if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player"))
         {
            GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
-           GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
 
             List<GameObject> worms = GameObject.Find("Game").GetComponent<GameController>().getAllWorms();
 
@@ -82,7 +81,6 @@ public class Bouncer : MonoBehaviour, Crosshair {
                 }
             }
 
-            Destroy(expl, 0.5f);
             if(hitTimer <= 0)
             {
                 hitTimer = MAXTIMER;
@@ -90,7 +88,11 @@ public class Bouncer : MonoBehaviour, Crosshair {
             }
 
             if(currentBounceCount >= bounceCount)
-              Destroy(gameObject);
+            {
+                GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
+                Destroy(expl, 0.5f);
+                Destroy(gameObject);
+            }
         }
     }
 
