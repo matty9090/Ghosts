@@ -113,6 +113,8 @@ public class GameController : MonoBehaviour {
         else
             currentWorm = team2[Random.Range(0, team2.Count)];
 
+        weaponUI.GetComponent<WeaponsUI>().setWeapon(currentWorm.GetComponent<WormMovement>().missile);
+
         currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Playing;
         gameState = GameStates.Panning;
         cam.pan();
