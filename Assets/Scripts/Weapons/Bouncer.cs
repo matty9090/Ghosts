@@ -22,7 +22,7 @@ public class Bouncer : MonoBehaviour, Crosshair {
     const float MAXTIMER = 0.05f;
     Vector3 vel;
 
-    AudioSource audio;
+    AudioSource audioBounce;
 
     private int maxRotation = 89;
     private int minRotation = -89;
@@ -34,7 +34,8 @@ public class Bouncer : MonoBehaviour, Crosshair {
         hitTimer = 0;
         collided = false;
         currentBounceCount = 0;
-        audio = GetComponent<AudioSource>();
+        
+        audioBounce = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -101,7 +102,7 @@ public class Bouncer : MonoBehaviour, Crosshair {
                 Destroy(gameObject);
             }
             else
-                audio.Play();
+                audioBounce.Play();
         }
     }
 
