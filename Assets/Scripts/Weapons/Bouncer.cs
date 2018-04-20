@@ -22,15 +22,19 @@ public class Bouncer : MonoBehaviour, Crosshair {
     const float MAXTIMER = 0.05f;
     Vector3 vel;
 
+    AudioSource audio;
+
     private int maxRotation = 89;
     private int minRotation = -89;
     private int RotationSpeed = 1;
+
 
     private void Start()
     {
         hitTimer = 0;
         collided = false;
         currentBounceCount = 0;
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -90,12 +94,14 @@ public class Bouncer : MonoBehaviour, Crosshair {
                 currentBounceCount++;
             }
 
-            if(currentBounceCount >= bounceCount)
+            if (currentBounceCount >= bounceCount)
             {
                 GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
                 Destroy(expl, 0.5f);
                 Destroy(gameObject);
             }
+            else
+                audio.Play();
         }
     }
 
