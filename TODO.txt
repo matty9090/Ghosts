@@ -4,3 +4,4 @@ TODO:
  - Animation for GUI
  - Add more weapons
  - Use proper gameplay
+ - Sounds

@@ -905,6 +905,7 @@ MonoBehaviour:
   gameOverTxt: {fileID: 1524927800}
   gameOverFade: {fileID: 1514424981}
   gameState: 0
+  canFire: 0
 --- !u!4 &803025469
 Transform:
   m_ObjectHideFlags: 0
