@@ -28,4 +28,13 @@ public class WeaponsUI : MonoBehaviour {
 
         GameObject.Find("SelectedWeapon").transform.GetChild(2).GetComponent<Image>().sprite = weapons[0].img;
     }
+
+    public void setWeapon(GameObject weapon) {
+        foreach (WeaponUIEl el in weapons) {
+            if(el.prefab == weapon) {
+                GameObject.Find("SelectedWeapon").transform.GetChild(2).GetComponent<Image>().sprite = el.img;
+                return;
+            }
+        }
+    }
 }
