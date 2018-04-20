@@ -96,11 +96,18 @@ public class Meteor : MonoBehaviour, Crosshair {
         }
 
         if (Input.GetKeyDown(KeyCode.E)) {
-            GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
+            GameController game = GameObject.Find("Game").GetComponent<GameController>();
+
             Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y + 10.0f, 0.0f);
             Vector2 crosshairPosition = crosshair.transform.position - tmp;
 
-            Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+            if (game.canFire) {
+                Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+                game.Timer = 10.9f;
+            }
+
+            game.canFire = false;
+            crosshair.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

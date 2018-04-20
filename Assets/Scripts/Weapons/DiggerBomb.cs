@@ -121,11 +121,18 @@ public class DiggerBomb : MonoBehaviour, Crosshair
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            GameObject.Find("Game").GetComponent<GameController>().Timer = 10.9f;
+            GameController game = GameObject.Find("Game").GetComponent<GameController>();
+
             Vector3 tmp = new Vector3(crosshair.transform.position.x, 6.0f, 0.0f);
             Vector2 crosshairPosition = crosshair.transform.position - tmp;
 
-            Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+            if (game.canFire) {
+                game.Timer = 10.9f;
+                Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+            }
+
+            game.canFire = false;
+            crosshair.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

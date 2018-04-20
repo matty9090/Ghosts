@@ -65,7 +65,8 @@ public class WormMovement : MonoBehaviour {
     }
 
     void statePlaying() {
-        crosshair.GetComponent<SpriteRenderer>().enabled = true;
+        if(gameController.canFire)
+            crosshair.GetComponent<SpriteRenderer>().enabled = true;
 
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);

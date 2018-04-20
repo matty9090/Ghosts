@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour {
 
     public enum GameStates { Playing, Panning, GameOver }
     public GameStates gameState;
+    public bool canFire;
 
 	void Start () {
         DamageNumberController.initialize();
@@ -102,6 +103,7 @@ public class GameController : MonoBehaviour {
 	}
 
     public void changeWorm() {
+        canFire = true;
         currentTeam = (currentTeam % 2) + 1;
         timer = 60.9f;
 
