@@ -118,6 +118,7 @@ public class GameController : MonoBehaviour {
         weaponUI.GetComponent<WeaponsUI>().setWeapon(currentWorm.GetComponent<WormMovement>().missile);
 
         currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Playing;
+        currentWorm.GetComponent<WormMovement>().SwapToCrosshair();
         gameState = GameStates.Panning;
         cam.pan();
     }
