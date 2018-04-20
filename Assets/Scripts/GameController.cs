@@ -32,6 +32,9 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     GameObject gameOverFade;
 
+    [SerializeField]
+    AudioSource winningMusic;
+
     public enum GameStates { Playing, Panning, GameOver }
     public GameStates gameState;
     public bool canFire;
@@ -143,6 +146,8 @@ public class GameController : MonoBehaviour {
 
         if (team1.Count <= 0 || team2.Count <= 0) {
             gameState = GameStates.GameOver;
+            winningMusic.Play();
+
             gameOverTxt.GetComponent<Text>().enabled = true;
             gameOverFade.GetComponent<Image>().enabled = true;
 
