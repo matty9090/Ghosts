@@ -35,6 +35,9 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     AudioSource winningMusic;
 
+    [SerializeField]
+    AudioSource clockTick;
+
     public enum GameStates { Playing, Panning, GameOver }
     public GameStates gameState;
     public bool canFire;
@@ -77,8 +80,12 @@ public class GameController : MonoBehaviour {
                 timer -= Time.deltaTime;
                 timerText.text = (int)timer + "";
 
-                if (timer <= 10.9)
+                if (timer <= 10.9) {
                     timerText.color = new Color(1.0f, 0.24f, 0.24f);
+
+                    if ((int)timer > (int)(timer - Time.deltaTime))
+                        clockTick.Play();
+                }
 
                 if (timer < 0.0f) {
                     timer = turnTime;
