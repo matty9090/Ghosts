@@ -127,6 +127,13 @@ public class WormMovement : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
             isGrounded = true;
+
+        if (coll.gameObject.tag == "Ground") {
+           // RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f));
+
+            //if(hit.)
+           // transform.position = new Vector3(transform.position.x, coll.transform.position.y, transform.position.z);
+        }
     }
 
     void checkCeiling()
