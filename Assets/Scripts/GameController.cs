@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < team2Node.transform.childCount; i++){
             team2.Add(team2Node.transform.GetChild(i).gameObject);
             team2[i].GetComponent<WormMovement>().setTextColour(Color.yellow);
-        }            
+        }    
 
         currentTeam = Random.Range(1, 3);
         changeWorm();

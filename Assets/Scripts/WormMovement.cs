@@ -84,10 +84,10 @@ public class WormMovement : MonoBehaviour {
                 }
             }
 
-            if (isGrounded)
+            if (isGrounded && gameController.canFire)
                 missile.GetComponent<Crosshair>().control(crosshair, crosshairMoveSpeed, sr, ref currentRotation, transform.position);
 
-            if (missile.GetComponent<Crosshair>().canMove() && isGrounded) {
+            if (missile.GetComponent<Crosshair>().canMove() && isGrounded || !gameController.canFire) {
                 if (Input.GetKey(KeyCode.A)) {
                     if (sr.flipX) {
                         sr.flipX = false;
