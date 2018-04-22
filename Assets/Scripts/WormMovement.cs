@@ -12,6 +12,7 @@ public class WormMovement : MonoBehaviour {
 
     private int facing = -1;
     private bool isGrounded = true;
+    private bool canDoubleJump = true;
     private int currentRotation = 0;
     private float crosshairMoveSpeed = 0.05f;
     private int health = 100;
@@ -75,13 +76,21 @@ public class WormMovement : MonoBehaviour {
             velocity = new Vector2(rb.velocity.x, rb.velocity.y);
 
         if (gameController.gameState == GameController.GameStates.Playing) {
-            if (Input.GetKey(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.Space)) {
                 if (isGrounded) {
                     isGrounded = false;
                     velocity.x = 1f * facing;
-                    velocity.y = 5f;
+                    velocity.y = 4f;
                     ani.SetInteger("State", 2);
                 }
+                else if(canDoubleJump == true)
+                {
+                    canDoubleJump = false;
+                    velocity.x = 1f * facing;
+                    velocity.y = 4f;
+                    ani.SetInteger("State", 2);
+                }
+
             }
 
             if (isGrounded && gameController.canFire)
@@ -126,7 +135,10 @@ public class WormMovement : MonoBehaviour {
     void OnCollisionEnter2D (Collision2D coll)
     {
         if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
+        {
+            canDoubleJump = true;
             isGrounded = true;
+        }
 
         if (coll.gameObject.tag == "Ground") {
            // RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f));
