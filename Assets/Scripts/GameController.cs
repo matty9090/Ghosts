@@ -77,8 +77,12 @@ public class GameController : MonoBehaviour {
                 timer -= Time.deltaTime;
                 timerText.text = (int)timer + "";
 
+                if (timer <= 10.9)
+                    timerText.color = new Color(1.0f, 0.24f, 0.24f);
+
                 if (timer < 0.0f) {
                     timer = turnTime;
+                    timerText.color = new Color(0.0f, 1.0f, 0.55f);
                     changeWorm();
                 }
 
