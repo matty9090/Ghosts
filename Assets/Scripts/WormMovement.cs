@@ -93,6 +93,7 @@ public class WormMovement : MonoBehaviour {
                     velocity.x = 1f * facing;
                     velocity.y = 4f;
                     ani.SetInteger("State", 2);
+                    
                 }
             }
 
@@ -129,8 +130,13 @@ public class WormMovement : MonoBehaviour {
             case WormState.Playing: statePlaying(); break;
             case WormState.Knockback: stateKnockback(); break;
         }
+        
+        if( flyingTimer < 0.0f)
+        {
+            isGrounded = true;
+            canDoubleJump = true;
+        }
 
-        checkGrounded();
         checkFallen();
         checkCeiling();
 
@@ -138,26 +144,31 @@ public class WormMovement : MonoBehaviour {
     }
 
     void checkGrounded() {
-        if(Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f), 0.4f) || flyingTimer < 0.0f) {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0.0f ,GetComponent<CapsuleCollider2D>().size.y ,0.0f) , Vector3.down, 0.04f);
+        if (hit.collider != null ) {
             isGrounded = true;
             canDoubleJump = true;
         }
+
     }
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-        /*if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
-        {
-            canDoubleJump = true;
-            isGrounded = true;
-        }
 
-        if (coll.gameObject.tag == "Ground") {
-           // RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f));
+        checkGrounded();
+        //if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
+        //{
+        //    canDoubleJump = true;
+        //    isGrounded = true;
+        //}
 
-            //if(hit.)
-           // transform.position = new Vector3(transform.position.x, coll.transform.position.y, transform.position.z);
-        }*/
+        //if (coll.gameObject.tag == "Ground")
+        //{
+        //    RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f));
+
+        //    if (hit.)
+        //        transform.position = new Vector3(transform.position.x, coll.transform.position.y, transform.position.z);
+        //}
     }
 
     void checkCeiling()
