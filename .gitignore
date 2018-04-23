@@ -35,4 +35,4 @@ sysinfo.txt
 *.exe
 *.dll
 
-Ghosts_Data/
+/Ghosts_Data/
