@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour {
     void Start () {
         menuItems[0].onClick.AddListener(btn_onPlay);
         menuItems[1].onClick.AddListener(btn_quit);
+        menuItems[2].onClick.AddListener(btn_about);
     }
 
     void btn_onPlay() {
@@ -19,5 +20,9 @@ public class MainMenu : MonoBehaviour {
 
     void btn_quit() {
         Application.Quit();
+    }
+
+    void btn_about() {
+        SceneManager.LoadScene("About");
     }
 }
