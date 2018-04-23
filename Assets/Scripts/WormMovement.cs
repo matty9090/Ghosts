@@ -17,9 +17,10 @@ public class WormMovement : MonoBehaviour {
     private float crosshairMoveSpeed = 0.05f;
     private int health = 100;
 
-    private float knockTimer = 0.0f;
-    private float deathFloor = -5.74f;
-    private float ceiling    = 3.9f;
+    private float knockTimer    = 0.0f;
+    private float deathFloor    = -5.74f;
+    private float ceiling       = 3.9f;
+    private float flyingTimer   = 2.0f;
 
     public float knockbackTimer = 2.0f;
     public Image healthBar;
@@ -72,25 +73,27 @@ public class WormMovement : MonoBehaviour {
         if (isGrounded) {
             velocity = new Vector2(0, rb.velocity.y);
             ani.SetInteger("State", 0);
-        } else
+            flyingTimer = 2.0f;
+        } else {
             velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+            flyingTimer -= Time.deltaTime;
+        }
 
         if (gameController.gameState == GameController.GameStates.Playing) {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 if (isGrounded) {
                     isGrounded = false;
-                    velocity.x = 1f * facing;
-                    velocity.y = 4f;
+                    velocity.x = 1.0f * facing;
+                    velocity.y = 4.4f;
                     ani.SetInteger("State", 2);
                 }
-                else if(canDoubleJump == true)
+                else if(canDoubleJump)
                 {
                     canDoubleJump = false;
                     velocity.x = 1f * facing;
                     velocity.y = 4f;
                     ani.SetInteger("State", 2);
                 }
-
             }
 
             if (isGrounded && gameController.canFire)
@@ -127,14 +130,23 @@ public class WormMovement : MonoBehaviour {
             case WormState.Knockback: stateKnockback(); break;
         }
 
+        checkGrounded();
         checkFallen();
         checkCeiling();
+
         rb.velocity = velocity;
+    }
+
+    void checkGrounded() {
+        if(Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f), 0.4f) || flyingTimer < 0.0f) {
+            isGrounded = true;
+            canDoubleJump = true;
+        }
     }
 
     void OnCollisionEnter2D (Collision2D coll)
     {
-        if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
+        /*if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
         {
             canDoubleJump = true;
             isGrounded = true;
@@ -145,7 +157,7 @@ public class WormMovement : MonoBehaviour {
 
             //if(hit.)
            // transform.position = new Vector3(transform.position.x, coll.transform.position.y, transform.position.z);
-        }
+        }*/
     }
 
     void checkCeiling()
