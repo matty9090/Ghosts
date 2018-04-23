@@ -51,12 +51,17 @@ public class DiggerBomb : MonoBehaviour, Crosshair
     {
         if (collision.gameObject.tag == "Ground")
         {
+            if(!timerStart)
+                GetComponent<AudioSource>().Play();
+
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, digRadius);
             timerStart = true;
         }
 
         if (!collided && ( collision.gameObject.tag == "Player" || timer <= 0))
         {
+            GetComponent<AudioSource>().Stop();
+
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
 
