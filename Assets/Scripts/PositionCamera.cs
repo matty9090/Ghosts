@@ -36,12 +36,17 @@ public class PositionCamera : MonoBehaviour {
                 break;
 
             case CameraState.Panning:
+                float target = controller.CurrentWorm.transform.position.x;
+
+                if (target < sceneStart) target = sceneStart;
+                if (target > sceneEnd)   target = sceneEnd;
+
                 int dir = ((controller.CurrentWorm.transform.position.x - transform.position.x) > 0) ? 1 : -1;
-                float distance = Mathf.Abs(transform.position.x - controller.CurrentWorm.transform.position.x);
+                float distance = Mathf.Abs(transform.position.x - target);
                 float scalar = (Mathf.Pow(distance + 2.0f, 2)) / 4.0f;
+                float x = transform.position.x + dir * Time.deltaTime * scalar;
 
-                transform.position = new Vector3(transform.position.x + dir * Time.deltaTime * scalar, transform.position.y, transform.position.z);
-
+                transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
                 if (distance < 0.12f) {
                     panned = true;

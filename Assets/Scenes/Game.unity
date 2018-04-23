@@ -1234,8 +1234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 803025468}
-  sceneStart: -6.52
-  sceneEnd: 7
+  sceneStart: -4.7
+  sceneEnd: 6.6
   panned: 0
 --- !u!1 &966467984
 GameObject:
