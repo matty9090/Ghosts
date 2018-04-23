@@ -19,7 +19,7 @@ public class WormMovement : MonoBehaviour {
 
     private float knockTimer    = 0.0f;
     private float deathFloor    = -5.74f;
-    private float ceiling       = 3.9f;
+    private float ceiling       = 4.2f;
     private float flyingTimer   = 2.0f;
 
     public float knockbackTimer = 2.0f;
