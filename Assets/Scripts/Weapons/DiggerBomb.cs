@@ -132,8 +132,10 @@ public class DiggerBomb : MonoBehaviour, Crosshair
             Vector2 crosshairPosition = crosshair.transform.position - tmp;
 
             if (game.canFire) {
-                game.Timer = 10.9f;
                 Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+
+                if (game.Timer > 10.9f)
+                    game.Timer = 10.9f;
             }
 
             game.canFire = false;

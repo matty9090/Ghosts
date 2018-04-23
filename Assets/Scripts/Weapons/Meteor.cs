@@ -103,7 +103,9 @@ public class Meteor : MonoBehaviour, Crosshair {
 
             if (game.canFire) {
                 Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
-                game.Timer = 10.9f;
+
+                if(game.Timer > 10.9f)
+                    game.Timer = 10.9f;
             }
 
             game.canFire = false;

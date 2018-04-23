@@ -166,9 +166,11 @@ public class Bouncer : MonoBehaviour, Crosshair {
             Vector2 fromPlayerToCross = crosshair.transform.position - pos;
 
             if (game.canFire) {
-                game.Timer = 10.9f;
                 var obj = (GameObject)Instantiate(gameObject, tmp, Quaternion.LookRotation(fromPlayerToCross));
                 obj.GetComponent<Rigidbody2D>().velocity = fromPlayerToCross * 10;
+
+                if (game.Timer > 10.9f)
+                    game.Timer = 10.9f;
             }
 
             game.canFire = false;
