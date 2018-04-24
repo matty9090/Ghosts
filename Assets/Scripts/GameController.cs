@@ -115,7 +115,7 @@ public class GameController : MonoBehaviour {
             float y = Random.Range(-1.0f, 3.8f);
 
             Vector2 pos = new Vector2(x, y);
-            RaycastHit2D hit = Physics2D.Raycast(pos, new Vector2(0.0f, -1.0f), 1.0f);
+            RaycastHit2D hit = Physics2D.Raycast(pos, new Vector2(0.0f, -1.0f), 2.0f);
 
             if (hit.collider != null) {
                 ghost.transform.position = pos;

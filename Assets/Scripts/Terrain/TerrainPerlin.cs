@@ -22,6 +22,16 @@ public class TerrainPerlin {
                 }
             }
         }
+
+        float yy = -4.9f;
+
+        for(float x = 0; x < scene_width; x += voxel_size) {
+            GameObject v = GameObject.Instantiate(voxel);
+            v.transform.position = new Vector3(x + x_offset, yy + y_offset, 0.0f);
+
+            string index = Mathf.Round(x / voxel_size) + "," + Mathf.Round(yy / voxel_size);
+            voxels[index] = v;
+        }
     }
 
     public Dictionary<string, GameObject> Terrain {
