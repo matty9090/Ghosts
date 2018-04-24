@@ -26,6 +26,9 @@ public class PositionCamera : MonoBehaviour {
     }
 
     void Update() {
+        if (GameObject.Find("Game").GetComponent<GameController>().gameState == GameController.GameStates.GameOver)
+            return;
+
         switch(cameraState) {
             case CameraState.Tracking:
                 Vector3 pos = new Vector3(controller.CurrentWorm.transform.position.x, transform.position.y, transform.position.z);

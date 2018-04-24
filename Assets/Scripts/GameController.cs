@@ -87,11 +87,8 @@ public class GameController : MonoBehaviour {
                         clockTick.Play();
                 }
 
-                if (timer < 0.0f) {
-                    timer = turnTime;
-                    timerText.color = new Color(0.0f, 1.0f, 0.55f);
+                if (timer < 0.0f)
                     changeWorm();
-                }
 
                 if (Input.GetKeyUp(KeyCode.U)) {
                     if (showWeaponUI)
@@ -106,6 +103,9 @@ public class GameController : MonoBehaviour {
                 if (cam.panned) {
                     cam.panned = false;
                     gameState = GameStates.Playing;
+
+                    timer = turnTime;
+                    timerText.color = new Color(0.0f, 1.0f, 0.55f);
                 }
 
                 break;
@@ -119,7 +119,6 @@ public class GameController : MonoBehaviour {
     public void changeWorm() {
         canFire = true;
         currentTeam = (currentTeam % 2) + 1;
-        timer = 60.9f;
 
         if (currentWorm)
             currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
