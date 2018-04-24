@@ -163,6 +163,10 @@ public class GameController : MonoBehaviour {
             winningMusic.Play();
 
             gameOverTxt.GetComponent<Text>().enabled = true;
+            if(team1.Count <= 0)
+                gameOverTxt.GetComponent<Text>().text = "Yellow Team Wins";
+            else
+                gameOverTxt.GetComponent<Text>().text = "Blue Team Wins ";
             gameOverFade.GetComponent<Image>().enabled = true;
 
             gameOverTxt.GetComponent<Animation>().Play();
