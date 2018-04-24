@@ -14,7 +14,7 @@ public class PositionCamera : MonoBehaviour {
 
     public bool panned = false;
 
-    enum CameraState { Tracking, Panning }
+    enum CameraState { Tracking, Panning, TrackCrosshair }
     CameraState cameraState;
 
     private void Awake() {
@@ -25,11 +25,25 @@ public class PositionCamera : MonoBehaviour {
         cameraState = CameraState.Panning;
     }
 
+    public void trackCrosshair() {
+        cameraState = CameraState.TrackCrosshair;
+    }
+
     void Update() {
         if (GameObject.Find("Game").GetComponent<GameController>().gameState == GameController.GameStates.GameOver)
             return;
 
         switch(cameraState) {
+            case CameraState.TrackCrosshair:
+                GameObject crosshair = controller.CurrentWorm.GetComponent<WormMovement>().crosshair;
+
+                Vector3 p = new Vector3(crosshair.transform.position.x, transform.position.y, transform.position.z);
+
+                if (p.x >= sceneStart && p.x <= sceneEnd)
+                    transform.position = p;
+
+                break;
+
             case CameraState.Tracking:
                 Vector3 pos = new Vector3(controller.CurrentWorm.transform.position.x, transform.position.y, transform.position.z);
 
