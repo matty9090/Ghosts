@@ -68,6 +68,8 @@ public class Meteor : MonoBehaviour, Crosshair {
                 }
             }
 
+            GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
+
             createMeteorites();
             Destroy(expl, 0.5f);
 
@@ -114,6 +116,9 @@ public class Meteor : MonoBehaviour, Crosshair {
             Vector2 crosshairPosition = crosshair.transform.position - tmp;
 
             if (game.canFire) {
+                Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
+                GameObject.Find("Main Camera").GetComponent<PositionCamera>().trackCrosshair();
+
                 GameObject meteor = Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
                 meteor.GetComponent<Meteor>().getTargetPos(crosshair.transform.position);
 
