@@ -164,9 +164,16 @@ public class GameController : MonoBehaviour {
 
             gameOverTxt.GetComponent<Text>().enabled = true;
             if(team1.Count <= 0)
+            {
+                gameOverTxt.GetComponent<Text>().color = Color.yellow;
                 gameOverTxt.GetComponent<Text>().text = "Yellow Team Wins";
+            }
             else
-                gameOverTxt.GetComponent<Text>().text = "Blue Team Wins ";
+            {
+                gameOverTxt.GetComponent<Text>().color = Color.cyan;
+                gameOverTxt.GetComponent<Text>().text = "Blue Team Wins";
+            }
+
             gameOverFade.GetComponent<Image>().enabled = true;
 
             gameOverTxt.GetComponent<Animation>().Play();
