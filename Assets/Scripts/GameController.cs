@@ -190,6 +190,7 @@ public class GameController : MonoBehaviour {
         currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Playing;
         currentWorm.GetComponent<WormMovement>().SwapToCrosshair();
         gameState = GameStates.Panning;
+
         cam.pan();
     }
 

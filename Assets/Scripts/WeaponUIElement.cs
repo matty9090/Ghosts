@@ -36,6 +36,7 @@ public class WeaponUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExit
         GameObject.Find("Game").GetComponent<GameController>().hideUI();
         GameObject.Find("Game").GetComponent<GameController>().CurrentWorm.GetComponent<WormMovement>().missile = el.prefab;
         GameObject.Find("Game").GetComponent<GameController>().CurrentWorm.GetComponent<WormMovement>().SwapToCrosshair();
+        GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
         GameObject.Find("SelectedWeapon").transform.GetChild(2).GetComponent<Image>().sprite = el.img;
 
         transform.GetChild(2).position += new Vector3(0.0f, 3.0f, 0.0f);

@@ -150,18 +150,6 @@ public class WormMovement : MonoBehaviour {
         rb.velocity = velocity;
     }
 
-    private void OnDrawGizmos() {
-        float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.08f;
-        Ray r = new Ray(transform.position - new Vector3(0.0f, y, 0.0f), Vector3.down);
-        Gizmos.DrawRay(r);
-
-        float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
-        y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.09f;
-
-        r = new Ray(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f));
-        Gizmos.DrawRay(r);
-    }
-
     void OnCollisionEnter2D (Collision2D coll)
     {
         float y_off = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.08f;
