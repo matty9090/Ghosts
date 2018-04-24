@@ -199,6 +199,8 @@ public class GameController : MonoBehaviour {
     }
 
     public void removeWorm(GameObject worm) {
+        worm.GetComponent<WormMovement>().takeDamage(100);
+
         if(currentWorm == worm)
             changeWorm();
 

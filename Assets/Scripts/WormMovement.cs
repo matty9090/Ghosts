@@ -45,6 +45,7 @@ public class WormMovement : MonoBehaviour {
 
         uiHealth.transform.GetChild(0).GetComponent<Text>().text = wormName;
         uiHealth.transform.GetChild(1).GetComponent<Text>().text = wormName;
+        uiHealth.transform.GetChild(3).GetComponent<Image>().enabled = false;
     }
 	
     void stateIdle() {
@@ -200,8 +201,11 @@ public class WormMovement : MonoBehaviour {
 
         ani.SetInteger("State", 3);
 
-        if (health < 0)
+        if (health <= 0) {
+            uiHealth.transform.GetChild(3).GetComponent<Image>().enabled = true;
+
             return true;
+        }
 
         return false;
     }
