@@ -63,12 +63,16 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < team1Node.transform.childCount; i++) {
             team1.Add(team1Node.transform.GetChild(i).gameObject);
             team1[i].GetComponent<WormMovement>().setTextColour(Color.cyan);
+
+            pickGhostPosition(1, team1[i]);
         }
 
         for (int i = 0; i < team2Node.transform.childCount; i++){
             team2.Add(team2Node.transform.GetChild(i).gameObject);
             team2[i].GetComponent<WormMovement>().setTextColour(Color.yellow);
-        }    
+
+            pickGhostPosition(2, team2[i]);
+        }
 
         currentTeam = Random.Range(1, 3);
         changeWorm();
@@ -76,8 +80,23 @@ public class GameController : MonoBehaviour {
         gameOverTxt.GetComponent<Text>().enabled = false;
         gameOverFade.GetComponent<Image>().enabled = false;
     }
-	
-	void Update () {
+
+    void pickGhostPosition(int team, GameObject ghost) {
+        do {
+            float x = (team == 1) ? Random.Range(-7.0f, -1.0f) : Random.Range(1.5f, 7.0f);
+            float y = Random.Range(-1.0f, 3.8f);
+
+            Vector2 pos = new Vector2(x, y);
+            RaycastHit2D hit = Physics2D.Raycast(pos, new Vector2(0.0f, -1.0f), 1.0f);
+
+            if (hit.collider != null) {
+                ghost.transform.position = pos;
+                return;
+            }
+        } while(true);
+    }
+
+    void Update () {
         switch(gameState) {
             case GameStates.Playing:
                 timer -= Time.deltaTime;

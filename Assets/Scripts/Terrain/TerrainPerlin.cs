@@ -13,7 +13,7 @@ public class TerrainPerlin {
 
         for (float y = 5; y > -5.0f; y -= voxel_size) {
             for (float x = 0; x < scene_width; x += voxel_size) {
-                if (Perlin.Noise((x + rx) / 2.5f, (y + ry) / 2.0f) > 0.06f) {
+                if (Perlin.Noise((x + rx) / 2.5f, (y + ry) / 1.8f) > 0.06f) {
                     GameObject v = GameObject.Instantiate(voxel);
                     v.transform.position = new Vector3(x + x_offset, y + y_offset, 0.0f);
 

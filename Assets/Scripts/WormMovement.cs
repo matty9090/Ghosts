@@ -144,12 +144,12 @@ public class WormMovement : MonoBehaviour {
     }
 
     void checkGrounded() {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0.0f ,GetComponent<CapsuleCollider2D>().size.y ,0.0f) , Vector3.down, 0.04f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0.0f, GetComponent<CapsuleCollider2D>().size.y, 0.0f), Vector3.down, 0.04f);
+
         if (hit.collider != null ) {
             isGrounded = true;
             canDoubleJump = true;
         }
-
     }
 
     void OnCollisionEnter2D (Collision2D coll)

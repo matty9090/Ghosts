@@ -23,7 +23,7 @@ public class TerrainLoader : MonoBehaviour {
     float ratio;
     int terrainWidth;
 
-    void Start() {
+    void Awake() {
         terrainWidth = (int)((float)sceneWidth / voxel_size);
         ratio        = (float)sceneWidth / (float)terrainWidth;
 
