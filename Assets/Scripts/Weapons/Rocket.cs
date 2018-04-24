@@ -15,6 +15,7 @@ public class Rocket : MonoBehaviour, Crosshair {
 
     bool collided;
     Vector3 vel;
+    AudioSource audioCast;
 
     private int maxRotation = 89;
     private int minRotation = -89;
@@ -22,7 +23,7 @@ public class Rocket : MonoBehaviour, Crosshair {
 
     private void Start() {
         collided = false;
-        //GetComponent<Rigidbody2D>().velocity = new Vector2(5.0f, 10.0f);
+        audioCast = GetComponent<AudioSource>();
     }
 
     private void Update() {
@@ -59,7 +60,7 @@ public class Rocket : MonoBehaviour, Crosshair {
                 }
             }
 
-            Destroy(expl, 0.5f);
+            Destroy(expl, 0.7f);
 
             collided = true;
             Destroy(gameObject);

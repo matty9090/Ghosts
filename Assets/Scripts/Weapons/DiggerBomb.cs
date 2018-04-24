@@ -22,6 +22,7 @@ public class DiggerBomb : MonoBehaviour, Crosshair
     bool collided;
     bool timerStart;
     float timer;
+    AudioSource audioCast;
 
     [SerializeField]
     Vector3 vel;
@@ -33,6 +34,7 @@ public class DiggerBomb : MonoBehaviour, Crosshair
         timerStart = false;
         timer = digTime;
         GetComponent<Rigidbody2D>().velocity = vel;
+        audioCast = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -93,7 +95,7 @@ public class DiggerBomb : MonoBehaviour, Crosshair
                 }
             }
 
-            Destroy(expl, 0.5f);
+            Destroy(expl, 0.7f);
 
             collided = true;
             Destroy(gameObject);

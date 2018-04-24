@@ -97,7 +97,7 @@ public class Bouncer : MonoBehaviour, Crosshair {
             if (currentBounceCount >= bounceCount)
             {
                 GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
-                Destroy(expl, 0.5f);
+                Destroy(expl, 0.7f);
                 Destroy(gameObject);
             }
             else

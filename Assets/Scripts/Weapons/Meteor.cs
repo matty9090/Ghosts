@@ -22,11 +22,13 @@ public class Meteor : MonoBehaviour, Crosshair {
     bool explode;
     Vector3 vel;
     Vector3 targetPosition;
+    AudioSource audioCast;
 
     private void Start() {
         collided = false;
         explode = false;
         GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.5f);
+        audioCast = GetComponent<AudioSource>();
     }
 
     private void Update() {
@@ -69,7 +71,7 @@ public class Meteor : MonoBehaviour, Crosshair {
             GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
 
             createMeteorites();
-            Destroy(expl, 0.5f);
+            Destroy(expl, 0.7f);
 
             collided = true;
             Destroy(gameObject);
@@ -113,8 +115,8 @@ public class Meteor : MonoBehaviour, Crosshair {
         if (Input.GetKeyDown(KeyCode.E)) {
             GameController game = GameObject.Find("Game").GetComponent<GameController>();
 
-            Vector3 tmp = new Vector3(crosshair.transform.position.x, crosshair.transform.position.y + 10.0f, 0.0f);
-            Vector2 crosshairPosition = crosshair.transform.position - tmp;
+            Vector3 tmp = new Vector3(crosshair.transform.position.x, 8.0f, 0.0f);
+            Vector2 crosshairPosition = crosshair.transform.position;
 
             if (game.canFire) {
                 GameObject meteor = Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
