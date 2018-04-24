@@ -173,9 +173,10 @@ public class GameController : MonoBehaviour {
 	}
 
     public void changeWorm() {
+        hideUI();
         canFire = true;
         currentTeam = (currentTeam % 2) + 1;
-
+        
         if (currentWorm)
             currentWorm.GetComponent<WormMovement>().wormState = WormMovement.WormState.Idle;
 
