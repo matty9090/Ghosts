@@ -36,6 +36,9 @@ public class GameController : MonoBehaviour {
     AudioSource winningMusic;
 
     [SerializeField]
+    AudioSource gameMusic;
+
+    [SerializeField]
     AudioSource clockTick;
 
     public enum GameStates { Playing, Panning, GameOver }
@@ -111,6 +114,7 @@ public class GameController : MonoBehaviour {
                 break;
 
             case GameStates.GameOver:
+                gameMusic.Stop();
 
                 break;
         }
