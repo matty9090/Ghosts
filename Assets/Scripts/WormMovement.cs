@@ -33,6 +33,9 @@ public class WormMovement : MonoBehaviour {
     public enum WormState { Idle, Playing, Knockback };
     public WormState wormState;
 
+    [SerializeField]
+    public AudioSource damageSound;
+
     // Use this for initialization
 	void Awake () {
         rb = GetComponent<Rigidbody2D>();
@@ -98,7 +101,6 @@ public class WormMovement : MonoBehaviour {
                     velocity.x = 1f * facing;
                     velocity.y = 4f;
                     ani.SetInteger("State", 2);
-                    
                 }
             }
 
@@ -206,6 +208,8 @@ public class WormMovement : MonoBehaviour {
 
             return true;
         }
+
+        damageSound.Play();
 
         return false;
     }
