@@ -39,8 +39,6 @@ public class Meteor : MonoBehaviour, Crosshair {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        
-
         if (!collided && (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player")) {
             GameObject.Find("Terrain").GetComponent<TerrainLoader>().removeVoxelsInRadius(collision.collider.transform.position, explosionRadius);
             GameObject expl = Instantiate(explosion, collision.collider.transform.position, Quaternion.Euler(0, 0, 0));
@@ -68,7 +66,7 @@ public class Meteor : MonoBehaviour, Crosshair {
                 }
             }
 
-           GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
+            GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
 
             createMeteorites();
             Destroy(expl, 0.5f);
@@ -98,11 +96,14 @@ public class Meteor : MonoBehaviour, Crosshair {
     }
 
     public void control(GameObject crosshair, float speed, SpriteRenderer sr, ref int rotation, Vector3 pos) {
+        GameObject.Find("Main Camera").GetComponent<PositionCamera>().trackCrosshair();
+
         if (Input.GetKey(KeyCode.A)) {
             crosshair.transform.Translate(new Vector3(-speed, 0.0f, 0.0f));
         } else if (Input.GetKey(KeyCode.D)) {
             crosshair.transform.Translate(new Vector3(speed, 0.0f, 0.0f));
         }
+
         if (Input.GetKey(KeyCode.W)) {
             crosshair.transform.Translate(new Vector3(0.0f, speed, 0.0f));
         } else if (Input.GetKey(KeyCode.S)) {
@@ -118,7 +119,6 @@ public class Meteor : MonoBehaviour, Crosshair {
             if (game.canFire) {
                 GameObject meteor = Instantiate(gameObject, tmp, Quaternion.LookRotation(crosshairPosition));
                 meteor.GetComponent<Meteor>().getTargetPos(crosshair.transform.position);
-                GameObject.Find("Main Camera").GetComponent<PositionCamera>().trackCrosshair();
 
                 if (game.Timer > 10.9f)
                     game.Timer = 10.9f;
