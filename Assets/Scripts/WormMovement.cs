@@ -159,7 +159,7 @@ public class WormMovement : MonoBehaviour {
             isGrounded = true;
             canDoubleJump = true;
 
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
+            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && wormState == WormState.Playing) {
                 float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
                 float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.09f;
 
