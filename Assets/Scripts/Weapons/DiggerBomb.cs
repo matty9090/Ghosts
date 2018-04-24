@@ -95,6 +95,8 @@ public class DiggerBomb : MonoBehaviour, Crosshair
                 }
             }
 
+            GameObject.Find("Main Camera").GetComponent<PositionCamera>().pan();
+
             Destroy(expl, 0.7f);
 
             collided = true;
@@ -109,6 +111,8 @@ public class DiggerBomb : MonoBehaviour, Crosshair
 
     public void control(GameObject crosshair, float speed, SpriteRenderer sr, ref int rotation, Vector3 pos)
     {
+        GameObject.Find("Main Camera").GetComponent<PositionCamera>().trackCrosshair();
+
         if (Input.GetKey(KeyCode.A))
         {
             crosshair.transform.Translate(new Vector3(-speed, 0.0f, 0.0f));
