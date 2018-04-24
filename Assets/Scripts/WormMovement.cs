@@ -156,7 +156,7 @@ public class WormMovement : MonoBehaviour {
         Gizmos.DrawRay(r);
 
         float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
-        y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.14f;
+        y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.09f;
 
         r = new Ray(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f));
         Gizmos.DrawRay(r);
@@ -173,9 +173,9 @@ public class WormMovement : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
                 float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
-                float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.14f;
+                float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.09f;
 
-                RaycastHit2D s_hit = Physics2D.Raycast(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f), 0.09f);
+                RaycastHit2D s_hit = Physics2D.Raycast(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f), 0.14f);
 
                 if (s_hit.collider != null) {
                     transform.Translate(sr.flipX ? 0.064f : -0.064f, (s_hit.transform.position.y - d_hit.transform.position.y) + 0.02f, 0.0f);
