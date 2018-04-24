@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     private GameObject currentWorm;
@@ -14,7 +15,13 @@ public class GameController : MonoBehaviour {
     private GameObject weaponUI;
 
     [SerializeField]
+    private GameObject menu;
+
+    [SerializeField]
     private GameObject btnSkip;
+
+    [SerializeField]
+    private GameObject btnExit;
 
     [SerializeField]
     private GameObject selectedWeapon;
@@ -48,7 +55,9 @@ public class GameController : MonoBehaviour {
     public GameStates gameState;
     public bool canFire;
 
-	void Start () {
+    private bool showMenu;
+
+    void Start () {
         DamageNumberController.initialize();
 
         gameState = GameStates.Playing;
@@ -56,6 +65,8 @@ public class GameController : MonoBehaviour {
         hideUI();
 
         timer = turnTime;
+        showMenu = false;
+        menu.SetActive(showMenu);
 
         team1 = new List<GameObject>();
         team2 = new List<GameObject>();
@@ -84,10 +95,15 @@ public class GameController : MonoBehaviour {
         gameOverFade.GetComponent<Image>().enabled = false;
 
         btnSkip.GetComponent<Button>().onClick.AddListener(btn_skip);
+        btnExit.GetComponent<Button>().onClick.AddListener(btn_exit);
     }
 
     void btn_skip() {
         changeWorm();
+    }
+
+    void btn_exit() {
+        SceneManager.LoadScene("MainMenu");
     }
 
     void pickGhostPosition(int team, GameObject ghost) {
@@ -106,7 +122,12 @@ public class GameController : MonoBehaviour {
     }
 
     void Update () {
-        switch(gameState) {
+        if (Input.GetKeyUp(KeyCode.Escape)) {
+            showMenu = !showMenu;
+            menu.SetActive(showMenu);
+        }
+
+        switch (gameState) {
             case GameStates.Playing:
                 timer -= Time.deltaTime;
                 timerText.text = (int)timer + "";
