@@ -28,6 +28,7 @@ public class WormMovement : MonoBehaviour {
     public Text wormNametxt;
     public GameObject crosshair;
     public GameObject missile;
+    public GameObject uiHealth;
 
     public enum WormState { Idle, Playing, Knockback };
     public WormState wormState;
@@ -41,6 +42,9 @@ public class WormMovement : MonoBehaviour {
         wormState = WormState.Idle;
         wormNametxt.text = wormName;
         knockTimer = knockbackTimer;
+
+        uiHealth.transform.GetChild(0).GetComponent<Text>().text = wormName;
+        uiHealth.transform.GetChild(1).GetComponent<Text>().text = wormName;
     }
 	
     void stateIdle() {
@@ -190,6 +194,8 @@ public class WormMovement : MonoBehaviour {
     {
         health -= amount;
         healthBar.fillAmount = (float)health / 100.0f;
+        uiHealth.transform.GetChild(2).GetComponent<Image>().fillAmount = (float)health / 100.0f;
+
         DamageNumberController.CreateFloatingText(amount.ToString(), transform);
 
         ani.SetInteger("State", 3);
@@ -214,5 +220,5 @@ public class WormMovement : MonoBehaviour {
 
         crosshair.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f));
         currentRotation = 0;
-    } 
+    }
 }
