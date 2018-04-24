@@ -150,32 +150,38 @@ public class WormMovement : MonoBehaviour {
         rb.velocity = velocity;
     }
 
-    void checkGrounded() {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position - new Vector3(0.0f, GetComponent<CapsuleCollider2D>().size.y, 0.0f), Vector3.down, 0.04f);
+    private void OnDrawGizmos() {
+        float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.08f;
+        Ray r = new Ray(transform.position - new Vector3(0.0f, y, 0.0f), Vector3.down);
+        Gizmos.DrawRay(r);
 
-        if (hit.collider != null ) {
-            isGrounded = true;
-            canDoubleJump = true;
-        }
+        float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
+        y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.14f;
+
+        r = new Ray(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f));
+        Gizmos.DrawRay(r);
     }
 
     void OnCollisionEnter2D (Collision2D coll)
     {
+        float y_off = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.08f;
+        RaycastHit2D d_hit = Physics2D.Raycast(transform.position - new Vector3(0.0f, y_off, 0.0f), Vector3.down, 0.08f);
 
-        checkGrounded();
-        //if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Player")
-        //{
-        //    canDoubleJump = true;
-        //    isGrounded = true;
-        //}
+        if (d_hit.collider != null) {
+            isGrounded = true;
+            canDoubleJump = true;
 
-        //if (coll.gameObject.tag == "Ground")
-        //{
-        //    RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0.0f, -1.0f));
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
+                float x = GetComponent<CapsuleCollider2D>().size.x / 2.0f;
+                float y = GetComponent<CapsuleCollider2D>().offset.y + GetComponent<CapsuleCollider2D>().size.y - 0.14f;
 
-        //    if (hit.)
-        //        transform.position = new Vector3(transform.position.x, coll.transform.position.y, transform.position.z);
-        //}
+                RaycastHit2D s_hit = Physics2D.Raycast(transform.position - new Vector3(sr.flipX ? -x : x, y, 0.0f), new Vector2(sr.flipX ? 1.0f : -1.0f, 0.0f), 0.09f);
+
+                if (s_hit.collider != null) {
+                    transform.Translate(sr.flipX ? 0.064f : -0.064f, (s_hit.transform.position.y - d_hit.transform.position.y) + 0.02f, 0.0f);
+                }
+            }
+        }
     }
 
     void checkCeiling()
