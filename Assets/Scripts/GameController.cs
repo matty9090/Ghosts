@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour {
     private GameObject weaponUI;
 
     [SerializeField]
+    private GameObject btnSkip;
+
+    [SerializeField]
     private GameObject selectedWeapon;
 
     [SerializeField]
@@ -79,6 +82,12 @@ public class GameController : MonoBehaviour {
 
         gameOverTxt.GetComponent<Text>().enabled = false;
         gameOverFade.GetComponent<Image>().enabled = false;
+
+        btnSkip.GetComponent<Button>().onClick.AddListener(btn_skip);
+    }
+
+    void btn_skip() {
+        changeWorm();
     }
 
     void pickGhostPosition(int team, GameObject ghost) {
