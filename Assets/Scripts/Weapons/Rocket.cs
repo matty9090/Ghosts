@@ -18,7 +18,7 @@ public class Rocket : MonoBehaviour, Crosshair {
 
     private int maxRotation = 89;
     private int minRotation = -89;
-    private int RotationSpeed = 1;
+    private int rotationSpeed = 2;
 
     private void Start() {
         collided = false;
@@ -82,21 +82,21 @@ public class Rocket : MonoBehaviour, Crosshair {
         } else if (Input.GetKey(KeyCode.W)) {
             if (rotation < maxRotation) {
                 if (!sr.flipX) {
-                    rotation += RotationSpeed;
-                    crosshair.transform.RotateAround(pos, Vector3.back, RotationSpeed);
+                    rotation += rotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.back, rotationSpeed);
                 } else {
-                    rotation += RotationSpeed;
-                    crosshair.transform.RotateAround(pos, Vector3.forward, RotationSpeed);
+                    rotation += rotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.forward, rotationSpeed);
                 }
             }
         } else if (Input.GetKey(KeyCode.S)) {
             if (rotation > minRotation) {
                 if (!sr.flipX) {
-                    rotation -= RotationSpeed;
-                    crosshair.transform.RotateAround(pos, Vector3.forward, RotationSpeed);
+                    rotation -= rotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.forward, rotationSpeed);
                 } else {
-                    rotation -= RotationSpeed;
-                    crosshair.transform.RotateAround(pos, Vector3.back, RotationSpeed);
+                    rotation -= rotationSpeed;
+                    crosshair.transform.RotateAround(pos, Vector3.back, rotationSpeed);
                 }
             }
         }

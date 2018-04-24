@@ -26,8 +26,7 @@ public class Bouncer : MonoBehaviour, Crosshair {
 
     private int maxRotation = 89;
     private int minRotation = -89;
-    private int RotationSpeed = 1;
-
+    private int RotationSpeed = 2;
 
     private void Start()
     {
@@ -131,6 +130,7 @@ public class Bouncer : MonoBehaviour, Crosshair {
             {
                 if (!sr.flipX)
                 {
+                    
                     rotation += RotationSpeed;
                     crosshair.transform.RotateAround(pos, Vector3.back, RotationSpeed);
                 }

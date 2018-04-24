@@ -14,7 +14,7 @@ public class WormMovement : MonoBehaviour {
     private bool isGrounded = true;
     private bool canDoubleJump = true;
     private int currentRotation = 0;
-    private float crosshairMoveSpeed = 0.05f;
+    private float crosshairMoveSpeed = 0.2f;
     private int health = 100;
 
     private float knockTimer    = 0.0f;
