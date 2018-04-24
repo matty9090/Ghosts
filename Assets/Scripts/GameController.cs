@@ -51,6 +51,9 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     AudioSource clockTick;
 
+    [SerializeField]
+    AudioSource deathNoise;
+
     public enum GameStates { Playing, Panning, GameOver }
     public GameStates gameState;
     public bool canFire;
@@ -199,6 +202,8 @@ public class GameController : MonoBehaviour {
     }
 
     public void removeWorm(GameObject worm) {
+
+        deathNoise.Play();
         if(currentWorm == worm)
             changeWorm();
 
